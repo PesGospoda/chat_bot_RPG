@@ -1,10 +1,1 @@
-public class Core {
-    public Player player = new Player();
-    private Parser text;
-    private Bot bot;
-
-    public Core(String text) {
-        this.text = new Parser(text);
-        this.bot = new Bot(this.text.GetDictionary());
-    }
-}
+public class Core {    public Player player = new Player();    private Parser text;    private Bot bot;    public Core(String text) {        this.text = new Parser(text);        this.bot = new Bot(this.text.toListQuestions());    }    public void Start(){        while (this.player.IsAlive() && this.bot.NotEnd()){            System.out.println(bot.NextQuestion());            if (bot.IsTrueAnswer(player.getAnswer()))                System.out.println("�����"); //тут надо боту добавить список реплик на верный ответ ну и не наверный на первое время потом сюжетку пилить будем            else{                System.out.println("�������!");                player.getDamage(10);            }        }    }}

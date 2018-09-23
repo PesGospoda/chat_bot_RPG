@@ -1,11 +1,21 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 
 public class Bot {
-    public Bot(Map<Integer,Question> text) {
-        this.dictionary = text;
+    public Bot(ArrayList<Question> text) {
+        this.questions = text;
     }
-    public static Map<Integer,Question> dictionary;
+    public ArrayList<Question> questions;
+    private int currentQuestion = 0;
 
+    public Boolean NotEnd(){return this.questions.size() != this.currentQuestion + 1;}
+
+    public String NextQuestion(){
+        currentQuestion++;
+        return questions.get(currentQuestion).question;
+    }
+
+    public Boolean IsTrueAnswer(String answer){
+        return answer.equals(questions.get(currentQuestion).answer);
+    }
 
 }
