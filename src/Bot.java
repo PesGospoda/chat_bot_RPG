@@ -6,6 +6,6 @@ public class Bot {
         this.dictionary = text;
     }
     public static Map<Integer,Question> dictionary;
-    public curre
+
 
 }

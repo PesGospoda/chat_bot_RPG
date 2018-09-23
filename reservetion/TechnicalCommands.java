@@ -6,14 +6,14 @@ import java.util.Map;
 
 public class TechnicalCommands {
 	
-	static Map<String, Operation> technicalCommands = new HashMap<String, Operation>();
+	static Map<String, Operation> technicalCommands = new HashMap<String, Operation>();//?я понял почему не робит но не понял зачем так и почему то там а не отдельно
 	
 	TechnicalCommands(){
 		technicalCommands.put("!playerinfo", (player) -> getPlayerInfo(player));
 		technicalCommands.put("hesoyam", (player) -> hesoyam(player));
 		technicalCommands.put("!help", (player) -> help(player));
 	}
-	
+
 	public static void getPlayerInfo(Player player) {
 		System.out.println("Health="+player.health);
 		System.out.println("level="+player.level);
