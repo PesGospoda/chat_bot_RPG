@@ -1,4 +1,3 @@
-package chat_bot_RPG;
 
 public class testEvent extends eventAbstract{
 	
