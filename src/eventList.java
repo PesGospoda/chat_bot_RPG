@@ -8,12 +8,7 @@ public class eventList {
 	
 	eventList()
 	{
-		events.add(new Event("testEvent", (player) -> testEvent(player)));
+		events.add(new testEvent());
 	}
 	
-	public void testEvent(Player player)
-	{
-		print("Hello");
-	}
-
 }

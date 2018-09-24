@@ -3,7 +3,7 @@ interface Operation{
 }
 
 
-public abstract class event {
+public abstract class eventAbstract {
 	
 	public String eventName;
 	public Operation startEvent;

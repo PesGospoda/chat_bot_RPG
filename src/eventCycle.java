@@ -22,7 +22,7 @@ public class eventCycle {
 			}
 			else
 			{
-				eventList.get(0).execute.execte();
+				eventList.get(0).startEvent.execute();
 			}
 	
 		}
