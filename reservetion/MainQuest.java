@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class MainQuest {
-	public static void main(String[] args) {
+	public static void main2(String[] args) {
 		Scanner in = new Scanner(System.in);
 		happenings happen = new happenings();
 		TechnicalCommands technical = new TechnicalCommands();
