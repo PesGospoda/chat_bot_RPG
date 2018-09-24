@@ -7,7 +7,6 @@ public abstract class eventAbstract {
 	
 	public String eventName;
 	public Operation startEvent;
-	public Parcer parcer;
 	
 
 
