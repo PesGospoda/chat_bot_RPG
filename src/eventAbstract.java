@@ -6,7 +6,8 @@ interface Operation{
 public abstract class eventAbstract {
 	
 	public String eventName;
-	public Operation startEvent;
+	public abstract void Execute(Player player);
+	public abstract String GetEventName();
 	
 
 

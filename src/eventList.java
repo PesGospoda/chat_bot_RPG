@@ -8,6 +8,7 @@ public class eventList {
 	eventList()
 	{
 		events.add(new testEvent());
+		events.add(new poleChudes());
 	}
 	
 }

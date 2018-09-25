@@ -10,7 +10,6 @@ public class eventCycle {
 		eventList eventsList = new eventList();
 		while (true)
 		{
-			System.out.println("print index");
 			String inputMain = in.next().toString();
 			String inputMainLower = inputMain.toLowerCase();
 			if( inputMainLower.equals("exit"))
@@ -20,9 +19,15 @@ public class eventCycle {
 			}
 			else
 			{
-				eventsList.events.get(0).startEvent.execute(player);
+				System.out.println(eventsList.events.get(0));
+				System.out.println(eventsList.events.get(0).GetEventName());
+				//System.out.println(a);
+				//System.out.println(eventsList.events.get(0).eventName);
+				eventsList.events.get(0).Execute(player);
+				//System.out.println(eventsList.events.get(0).eventName);
 			}
 	
 		}
+		in.close();
 	}
 }

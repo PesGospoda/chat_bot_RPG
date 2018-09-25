@@ -1,10 +1,21 @@
 
 public class testEvent extends eventAbstract{
 	
-	public String eventName = "testEvent";
+	private String eventName;
+	
+	testEvent(){
+		this.eventName = "testEvent";
+	}
+		
+	
 	public void Execute(Player player)
 	{
-		System.out.print("Hello");
+		System.out.println(eventName);
+	}
+	
+	public String GetEventName()
+	{
+		return eventName;
 	}
 
 }
