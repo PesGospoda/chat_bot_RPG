@@ -58,5 +58,6 @@ public class poleChudes extends eventAbstract{
                 }
             }
         }
+        in.close();
 	}
 }
