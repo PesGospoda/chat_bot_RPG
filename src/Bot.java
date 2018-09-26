@@ -7,7 +7,7 @@ public class Bot {
     public ArrayList<Question> questions;
     private int currentQuestion = 0;
 
-    public Boolean NotEnd(){return this.questions.size() != this.currentQuestion + 1;}
+    public boolean NotEnd(){return this.questions.size() != this.currentQuestion + 1;}
 
     public String NextQuestion(){
         currentQuestion++;

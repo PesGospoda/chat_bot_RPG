@@ -1,1 +1,24 @@
-public class Core extends eventAbstract{    public Player player = new Player();    private Parser text = new Parser("diologs.txt");    private Bot bot;    private String eventName = "Core";        public String GetEventName()    {    	return eventName;    }    public Core() {        //this.text = new Parser(text);        this.bot = new Bot(this.text.toListQuestions());    }    public void Execute(Player player){        while (this.player.IsAlive() && this.bot.NotEnd()){            System.out.println(bot.NextQuestion());            if (bot.IsTrueAnswer(player.getAnswer()))                System.out.println("�����"); //тут надо боту добавить список реплик на верный ответ ну и не наверный на первое время потом сюжетку пилить будем            else{                System.out.println("�������!");                player.getDamage(10);            }        }    }}
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Core {
+	
+	public static void start()
+	{
+		Player player = new Player();
+		eventList eventsList = new eventList(player);
+		Random rnd = new Random();
+		while (eventsList.Count() != 0 && player.IsAlive())
+		{
+			int nextEvent = rnd.nextInt(eventsList.events.size());
+			System.out.println(eventsList.events.get(nextEvent).GetEventName());
+			eventsList.events.get(nextEvent).Execute();
+			eventsList.Remove(nextEvent);
+			System.out.println("End of event");
+	
+		}
+		//in.close();
+        System.out.println("���������� ��������!");
+	}
+}
