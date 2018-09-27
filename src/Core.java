@@ -19,6 +19,6 @@ public class Core {
 	
 		}
 		//in.close();
-        System.out.println("Подземелье пройдено!");
+        System.out.println("Dungeon completed!");
 	}
 }

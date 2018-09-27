@@ -8,6 +8,8 @@ public class eventList {
 	{
 		events.add(new eventGrobnica(pl));
         events.add(new eventGrobnica(pl));
+        events.add(new poleChudes());
+		events.add(new testEvent());
 	}
 
 	public void Remove(int index){
