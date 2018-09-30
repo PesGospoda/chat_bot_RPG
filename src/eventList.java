@@ -6,9 +6,9 @@ public class eventList {
 	
 	eventList(Player pl)
 	{
-		events.add(new eventGrobnica(pl));
-        events.add(new eventGrobnica(pl));
-        events.add(new poleChudes());
+		//events.add(new eventGrobnica(pl));
+        //events.add(new eventGrobnica(pl));
+        //events.add(new poleChudes());
 		events.add(new testEvent());
 	}
 

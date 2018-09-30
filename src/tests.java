@@ -12,4 +12,5 @@ public class tests {
     	player.getDamage(100);
         assertEquals(false, player.IsAlive());
     }
+
 }
