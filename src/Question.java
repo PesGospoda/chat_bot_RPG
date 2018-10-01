@@ -1,4 +1,6 @@
+import java.util.ArrayList;
+
 public class Question {
     public String question;
-    public String answer;
+    public ArrayList<String> answers = new ArrayList<String>();
 }

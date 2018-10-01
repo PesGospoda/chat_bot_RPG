@@ -1,24 +1,22 @@
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class Core {
 	
-	public static void start()
+	public static void start(Player player)
 	{
-		Player player = new Player();
-		eventList eventsList = new eventList(player);
+		EventList eventsList = new EventList(player);
 		Random rnd = new Random();
-		while (eventsList.Count() != 0 && player.IsAlive())
+		while (eventsList.Count() != 0 && player.isAlive())
 		{
 			int nextEvent = rnd.nextInt(eventsList.events.size());
-			System.out.println(eventsList.events.get(nextEvent).GetEventName());
-			eventsList.events.get(nextEvent).Execute();
+			System.out.println(eventsList.events.get(nextEvent).getEventName());
+			eventsList.events.get(nextEvent).execute(player);
 			eventsList.Remove(nextEvent);
 			System.out.println("End of event");
 	
 		}
 		//in.close();
-        System.out.println("Подземелье пройдено!");
+        System.out.println("Dungeon completed!");
 	}
 }

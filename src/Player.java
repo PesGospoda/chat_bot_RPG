@@ -15,10 +15,12 @@ public class Player {
         return input.nextLine();
     }
 
-    public Boolean IsAlive(){ return this.health > 0; }
+    public Boolean isAlive(){ return this.health > 0; }
 
     public int getDamage(int damage){
         health -= damage;
         return health;
     }
+
+    public int getHealth(){ return this.health; }
 }

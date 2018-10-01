@@ -14,8 +14,7 @@ public class Bot {
         return questions.get(currentQuestion).question;
     }
 
-    public Boolean IsTrueAnswer(String answer){
-        return answer.equals(questions.get(currentQuestion).answer);
+    //public Boolean IsTrueAnswer(String answer){
+    //    return answer.equals(questions.get(currentQuestion).answer);
     }
 
-}
