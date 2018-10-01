@@ -1,11 +1,11 @@
 
 import java.util.ArrayList;
 
-public class quizWords {
+public class QuizWords {
 	
 	ArrayList<String> words = new ArrayList<String>();
 	
-	quizWords() {
+	QuizWords() {
 		words.add("hello");
 		words.add("car");
 		words.add("airplane");

@@ -1,19 +1,19 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class poleChudes extends eventAbstract{
+public class PoleChudes extends EventAbstract {
 	
-	private String eventName = "poleChudes";
+	private String eventName = "PoleChudes";
 	
-	public String GetEventName()
+	public String getEventName()
 	{
 		return eventName;
 	}
 	
-	public void Execute()
+	public void execute(Player player)
 	{
 		Scanner input = new Scanner(System.in);
-        var quizWordsList = new quizWords();
+        var quizWordsList = new QuizWords();
         Random rnd = new Random();
         while(true)
         {

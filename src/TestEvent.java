@@ -2,23 +2,23 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class testEvent extends eventAbstract{
+public class TestEvent extends EventAbstract {
 	
 	private String eventName;
 	private Parser parser;
 	
-	testEvent(){
-		this.eventName = "testEvent";
+	TestEvent(){
+		this.eventName = "TestEvent";
 		this.parser = new Parser();
 	}
 		
 	
-	public void Execute()
+	public void execute(Player player)
 	{
 		Scanner input = new Scanner(System.in);
 		ArrayList<Question> listQuest = null;
 		try {
-			listQuest = parser.MakeQuestions("testDialog.txt");
+			listQuest = parser.makeQuestions("testDialogs.txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -29,11 +29,14 @@ public class testEvent extends eventAbstract{
 			if (listQuest.get(i).answers.contains(answer))
 				System.out.println("Right!");
 			else
+				{
 				System.out.println("Wrong!");
+				player.getDamage(10);
+			}
 		}
 	}
 	
-	public String GetEventName()
+	public String getEventName()
 	{
 		return eventName;
 	}

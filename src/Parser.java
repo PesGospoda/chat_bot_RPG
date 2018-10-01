@@ -7,22 +7,7 @@ import java.util.ArrayList;
 
 public class Parser {
 
-    //private BufferedReader readLine;
-
-    //public Parser(String file) {
-    //    try
-    //    {
-    //        FileReader reader = new FileReader(file);
-    //        BufferedReader readLine = new BufferedReader(reader);
-    //    }
-    //    catch(IOException ex)
-    //    {
-    //        System.out.println(ex.getMessage());
-    //    }
-
-    //}
-
-    public ArrayList<Question> MakeQuestions(String file) throws IOException {
+    public ArrayList<Question> makeQuestions(String file) throws IOException {
         FileReader reader = null;
         try {
             reader = new FileReader(file);

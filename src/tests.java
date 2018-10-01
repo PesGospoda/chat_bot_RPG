@@ -10,7 +10,7 @@ public class tests {
     public void testGetSum() throws Exception {
     	Player player = new Player();
     	player.getDamage(100);
-        assertEquals(false, player.IsAlive());
+        assertEquals(false, player.isAlive());
     }
 
 }

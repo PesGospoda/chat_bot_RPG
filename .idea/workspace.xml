@@ -2,23 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa77b7c-a9f6-437c-9561-1343a4a7f9e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Bot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/Bot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diologs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dialogs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Core.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/Core.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/diologs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/diologs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/diologs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/eventAbstract.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/eventAbstract.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chat-bot/eventGrobnica.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/eventGrobnica.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chat-bot/eventList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/eventList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/poleChudes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/poleChudes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/quizWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/quizWords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/testDialog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/testEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/testEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat-bot/tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diologs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/diologs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eventGrobnica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventGrobnica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eventList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/diologs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dungeonDialogs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventAbstract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventGrobnica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventGrobnica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poleChudes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PoleChudes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quizWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuizWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testDialog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/testDialogs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testDialog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testDialogs.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,48 +84,49 @@
     <session id="-1464097568">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="38" />
+          <entry key="java" value="51" />
           <entry key="testDial" value="1" />
-          <entry key="txt" value="9" />
+          <entry key="txt" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="38" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="JAVA" value="51" />
+          <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1061" />
+          <entry key="java" value="1221" />
           <entry key="testDial" value="4" />
           <entry key="txt" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1061" />
+          <entry key="JAVA" value="1221" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.46" value="2" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.87" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,76 +135,78 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/poleChudes.java">
+        <entry file="file://$PROJECT_DIR$/src/PoleChudes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="55" />
+            <state relative-caret-position="51">
+              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/quizWords.java">
+        <entry file="file://$PROJECT_DIR$/src/QuizWords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="102">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tests.java">
+        <entry file="file://$PROJECT_DIR$/src/TestEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="357">
+              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eventGrobnica.java">
+        <entry file="file://$PROJECT_DIR$/src/EventGrobnica.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/testDialog.txt">
+        <entry file="file://$PROJECT_DIR$/src/EventList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EventAbstract.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Bot.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testDialog.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eventAbstract.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Question.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -198,8 +214,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="374">
+              <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -231,28 +247,33 @@
         <option value="$PROJECT_DIR$/src/bot.java" />
         <option value="$PROJECT_DIR$/src/Сore.java" />
         <option value="$PROJECT_DIR$/src/MainQuest.java" />
-        <option value="$PROJECT_DIR$/src/quizWords.java" />
         <option value="$PROJECT_DIR$/src/testClasss.java" />
         <option value="$PROJECT_DIR$/src/happenings.java" />
         <option value="$PROJECT_DIR$/src/answerDictionary.java" />
-        <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/eventCycle.java" />
         <option value="$PROJECT_DIR$/src/TechnicalCommands.java" />
-        <option value="$PROJECT_DIR$/src/Core.java" />
-        <option value="$PROJECT_DIR$/src/poleChudes.java" />
         <option value="$PROJECT_DIR$/src/tests.java" />
-        <option value="$PROJECT_DIR$/src/eventGrobnica.java" />
         <option value="$PROJECT_DIR$/src/Bot.java" />
         <option value="$PROJECT_DIR$/src/testDial" />
         <option value="$PROJECT_DIR$/src/testDial.txt" />
         <option value="$PROJECT_DIR$/src/diologs.txt" />
         <option value="$PROJECT_DIR$/src/Question.java" />
         <option value="$PROJECT_DIR$/testDialog.txt" />
-        <option value="$PROJECT_DIR$/src/eventList.java" />
-        <option value="$PROJECT_DIR$/src/Parser.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/quizWords.java" />
         <option value="$PROJECT_DIR$/src/testEvent.java" />
+        <option value="$PROJECT_DIR$/src/Parser.java" />
+        <option value="$PROJECT_DIR$/src/eventList.java" />
+        <option value="$PROJECT_DIR$/src/EventList.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/eventAbstract.java" />
+        <option value="$PROJECT_DIR$/src/poleChudes.java" />
+        <option value="$PROJECT_DIR$/src/eventGrobnica.java" />
+        <option value="$PROJECT_DIR$/src/EventAbstract.java" />
+        <option value="$PROJECT_DIR$/src/EventGrobnica.java" />
+        <option value="$PROJECT_DIR$/src/PoleChudes.java" />
+        <option value="$PROJECT_DIR$/src/TestEvent.java" />
+        <option value="$PROJECT_DIR$/src/Player.java" />
+        <option value="$PROJECT_DIR$/src/Core.java" />
       </list>
     </option>
   </component>
@@ -274,6 +295,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -291,7 +313,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,7 +321,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538330454519" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538373662760" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
@@ -427,9 +448,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2806354" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28517398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -437,7 +457,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -510,7 +530,7 @@
     <entry file="file://$PROJECT_DIR$/src/reservetion/happenings.java" />
     <entry file="file://$PROJECT_DIR$/src/reservetion/TechnicalCommands.java" />
     <entry file="file://$PROJECT_DIR$/src/answerDictionary.java" />
-    <entry file="file://$PROJECT_DIR$/out/production/chat-bot/quizWords.class">
+    <entry file="file://$PROJECT_DIR$/out/production/chat-bot/QuizWords.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-110" />
       </provider>
@@ -527,74 +547,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TechnicalCommands.java" />
     <entry file="file://$PROJECT_DIR$/src/testDial" />
-    <entry file="file://$PROJECT_DIR$/src/Bot.java">
+    <entry file="file://$PROJECT_DIR$/src/testDial.txt" />
+    <entry file="file://$PROJECT_DIR$/src/tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testDial.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        <state relative-caret-position="221">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diologs.txt">
+    <entry file="file://$PROJECT_DIR$/src/testDialogs.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eventList.java">
+    <entry file="file://$PROJECT_DIR$/testDialogs.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="68">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="45" column="73" lean-forward="true" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="73" />
+        <state relative-caret-position="101">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/poleChudes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -605,58 +589,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eventGrobnica.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testDialog.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testDialog.txt">
+    <entry file="file://$PROJECT_DIR$/src/dungeonDialogs.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/quizWords.java">
+    <entry file="file://$PROJECT_DIR$/src/QuizWords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eventAbstract.java">
+    <entry file="file://$PROJECT_DIR$/src/EventList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PoleChudes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests.java">
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EventAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EventGrobnica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
