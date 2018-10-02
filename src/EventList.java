@@ -7,7 +7,7 @@ public class EventList {
 	EventList(Player player)
 	{
 		//events.add(new EventGrobnica(pl));
-        //events.add(new EventGrobnica(pl));
+        events.add(new EventGrobnica());
         //events.add(new PoleChudes());
 		events.add(new TestEvent());
 	}

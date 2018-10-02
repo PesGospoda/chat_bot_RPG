@@ -1,0 +1,13 @@
+#Welcome to the tomb of the Great Sphinx of Arakan, mortal. Here's your first question, are you ready?
+$yes
+$ok
+$let's go
+#What's 2+2?
+$4
+#What's my name?
+$arakan
+#Tell me a secret
+$a secret
+$secret
+#Lived were yes gone, where?
+$somewhere

@@ -31,7 +31,6 @@ public class TestEvent extends EventAbstract {
 			else
 				{
 				System.out.println("Wrong!");
-				player.getDamage(10);
 			}
 		}
 	}

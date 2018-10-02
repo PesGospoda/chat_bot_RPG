@@ -28,6 +28,7 @@ public class Parser {
             }
             else
             {
+                System.out.println(line);
                 result.get(questionIndex).answers.add(line.substring(1));
             }
         }
