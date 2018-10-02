@@ -5,9 +5,9 @@ $let's go
 #What's 2+2?
 $4
 #What's my name?
-&arakan
+$arakan
 #Tell me a secret
-&a secret
-&secret
+$a secret
+$secret
 #Lived were yes gone, where?
 $somewhere
