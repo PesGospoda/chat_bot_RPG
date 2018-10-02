@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -9,7 +8,7 @@ public class TestEvent extends EventAbstract {
 	
 	TestEvent(){
 		this.eventName = "TestEvent";
-		this.parser = new Parser();
+		this.parser = new Parser("testDialogs.txt");
 	}
 		
 	
@@ -17,11 +16,9 @@ public class TestEvent extends EventAbstract {
 	{
 		Scanner input = new Scanner(System.in);
 		ArrayList<Question> listQuest = null;
-		try {
-			listQuest = parser.makeQuestions("testDialogs.txt");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+
+		listQuest = parser.toListQuestions();
+
 		for(int i =0; i<listQuest.size();i++)
 		{
 			System.out.println(listQuest.get(i).question);

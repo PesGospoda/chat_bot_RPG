@@ -1,63 +1,52 @@
-import java.util.Random;
-import java.util.Scanner;
 
 public class PoleChudes extends EventAbstract {
 	
-	private String eventName = "PoleChudes";
-	
-	public String getEventName()
+	public String eventName = "PoleChudes";
+
+	public Player player = new Player();
+
+    public String getEventName()
 	{
 		return eventName;
 	}
-	
+
+    public String quizWord;
+
+    public StringBuilder answerWord = new StringBuilder();
+
+    public PoleChudes(String quizWord) {
+        this.quizWord = quizWord;
+        for (int i=0; i<quizWord.length(); i++)
+            answerWord.append(".");
+    }
+
+    public void setLetter(char letter) {
+        if (quizWord.contains(letter + "")) {
+            System.out.println("good");
+            for (int i = 0; i < quizWord.length(); i++)
+                if (quizWord.charAt(i) == letter)
+                    answerWord.setCharAt(i, letter);
+        } else {
+            System.out.println("there is no such letter");
+            player.getDamage(10);
+        }
+    }
+
 	public void execute(Player player)
 	{
-		Scanner input = new Scanner(System.in);
-        var quizWordsList = new QuizWords();
-        Random rnd = new Random();
-        while(true)
+	    this.player = player; //выпилить в конструктор
+        System.out.println("Welcome on The Game");
+        while(player.isAlive() && !quizWord.equals(answerWord.toString()))
         {
-            String quizWord = quizWordsList.words.get(rnd.nextInt(quizWordsList.words.size()));
-            StringBuilder answerWord = new StringBuilder();
-            for (int i=0; i<quizWord.length(); i++)
-                answerWord.append(".");
-            System.out.println("Welcome on show Pole Chudes");
-            String inputMain = input.next().toString();
-            String inputMainLower = inputMain.toLowerCase();
-            if( inputMainLower.equals("exit"))
-            {
-                System.out.println("bye");
-                break;
-            }
-            while (true)
-            {
-                System.out.println(answerWord);
-                System.out.println("say letter");
-                String inputLower = input.next().toString().toLowerCase();
-                //String inputLower = input.toLowerCase();
-                if( inputLower.equals("exit"))
-                {
-                    System.out.println("bye");
-                    break;
-                }
-                if (inputLower.length()!=1)
-                    System.out.println("this is not a letter");
-                else
-                {
-                    if (quizWord.contains(inputLower))
-                    {
-                        System.out.println("good");
-                        for(int i=0;i<quizWord.length();i++)
-                            if(quizWord.charAt(i)==inputLower.charAt(0))
-                                answerWord.setCharAt(i, inputLower.charAt(0));
-                    }
-                    else
-                    {
-                        System.out.println("there is no such letter");
-                    }
-                }
-            }
+            System.out.println(answerWord);
+            System.out.println("say letter");
+            String inputLower = player.getAnswer().toLowerCase();
+            if (inputLower.length()!=1)
+                System.out.println("this is not a letter");
+            else
+                setLetter(inputLower.charAt(0));
         }
-        //input.close();
+
 	}
 }
+
