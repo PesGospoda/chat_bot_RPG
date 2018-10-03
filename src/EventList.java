@@ -6,8 +6,8 @@ public class EventList {
 
 	EventList(Player player)
 	{
-		//events.add(new EventGrobnica());
-		events.add(new PoleChudes("hello"));
+		events.add(new EventGrobnica());
+		//events.add(new PoleChudes("hello"));
 		//events.add(new TestEvent());
 	}
 

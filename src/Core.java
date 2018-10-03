@@ -2,9 +2,8 @@
 import java.util.Random;
 
 public class Core {
-	
-	public static void start(Player player)
-	{
+
+	public static void start(Player player) {
 		EventList eventsList = new EventList(player);
 		Random rnd = new Random();
 		while (eventsList.Count() != 0 && player.isAlive())
