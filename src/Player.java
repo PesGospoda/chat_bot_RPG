@@ -8,11 +8,21 @@ public class Player {
 
     private int score;
     private int health;
+    private TechnicalCommands techCommands = new TechnicalCommands(this);
 
     private final Scanner input = new Scanner(System.in);
 
     public  String getAnswer() {
-        return input.nextLine();
+        String answer;
+        while (true)
+        {
+            answer = input.nextLine();
+            if (techCommands.listOfCommands.get(answer)!=null)
+                techCommands.listOfCommands.get(answer).execute();
+            else
+                break;
+        }
+        return answer;
     }
 
     public Boolean isAlive(){ return this.health > 0; }
