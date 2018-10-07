@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Player {
+
     public Player() {
         this.score = 0;
         this.health = 100;
@@ -32,5 +33,7 @@ public class Player {
         return health;
     }
 
-    public int getHealth(){ return this.health; }
+    public int getHealth(){
+        return this.health;
+    }
 }

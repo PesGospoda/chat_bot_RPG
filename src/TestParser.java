@@ -1,10 +1,12 @@
 import org.junit.*;
 import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 
 public class TestParser {
-    public ArrayList<Question> createQuestion(String file){
+    public List<Question> createQuestion(String file){
         Parser parser = new Parser(file);
         return parser.toListQuestions();
     }

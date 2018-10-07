@@ -4,7 +4,7 @@ public class Question {
     public String question;
     public ArrayList<String> answers = new ArrayList<>();
 
-    public Question(String question) {
+    Question(String question) {
         this.question = question;
     }
 

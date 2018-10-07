@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class TestEvent extends EventAbstract {
@@ -15,7 +16,7 @@ public class TestEvent extends EventAbstract {
 	public void execute(Player player)
 	{
 		Scanner input = new Scanner(System.in);
-		ArrayList<Question> listQuest = null;
+		List<Question> listQuest = null;
 
 		listQuest = parser.toListQuestions();
 

@@ -8,7 +8,7 @@ public class Core {
 		Random rnd = new Random();
 		while (eventsList.Count() != 0 && player.isAlive())
 		{
-			int nextEvent = rnd.nextInt(eventsList.events.size());
+			int nextEvent = rnd.nextInt(eventsList.Count());
 			System.out.println(eventsList.events.get(nextEvent).getEventName());
 			eventsList.events.get(nextEvent).execute(player);
 			eventsList.Remove(nextEvent);

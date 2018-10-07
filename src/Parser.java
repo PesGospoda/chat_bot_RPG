@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Parser {
@@ -18,8 +19,8 @@ public class Parser {
         readLine = new BufferedReader(reader);
     }
 
-    public ArrayList<Question> toListQuestions() {
-        var result = new ArrayList<Question>();
+    public List<Question> toListQuestions() {
+        List<Question> result = new ArrayList<Question>();
         String line;
         int questionIndex = -1;
         try {
