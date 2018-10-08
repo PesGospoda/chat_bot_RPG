@@ -1,20 +1,20 @@
 import java.util.HashMap;
 import java.util.Map;
 
-interface Operation{
+interface Operation {
     void execute();
 }
 
 public class TechnicalCommands {
     public static Map<String, Operation> listOfCommands = new HashMap<String, Operation>();
 
-    TechnicalCommands(Player player){
+    TechnicalCommands(Player player) {
         listOfCommands.put("!playerinfo", () -> getPlayerInfo(player));
         listOfCommands.put("!help", () -> help(player));
     }
 
     private static void getPlayerInfo(Player player) {
-        System.out.println("Health="+player.getHealth());
+        System.out.println("Health=" + player.getHealth());
     }
 
     private static void help(Player player) {

@@ -34,7 +34,7 @@ public class Parser {
                     result.get(questionIndex).answers.add(line.substring(1));
                 }
             }
-        }catch (IOException e){
+        } catch (IOException e) {
             e.getMessage();
         }
 

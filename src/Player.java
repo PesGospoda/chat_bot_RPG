@@ -13,12 +13,11 @@ public class Player {
 
     private final Scanner input = new Scanner(System.in);
 
-    public  String getAnswer() {
+    public String getAnswer() {
         String answer;
-        while (true)
-        {
+        while (true) {
             answer = input.nextLine();
-            if (techCommands.listOfCommands.get(answer)!=null)
+            if (techCommands.listOfCommands.get(answer) != null)
                 techCommands.listOfCommands.get(answer).execute();
             else
                 break;
@@ -26,14 +25,16 @@ public class Player {
         return answer;
     }
 
-    public Boolean isAlive(){ return this.health > 0; }
+    public Boolean isAlive() {
+        return this.health > 0;
+    }
 
-    public int getDamage(int damage){
+    public int getDamage(int damage) {
         health -= damage;
         return health;
     }
 
-    public int getHealth(){
+    public int getHealth() {
         return this.health;
     }
 }

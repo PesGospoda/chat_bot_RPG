@@ -8,5 +8,7 @@ public class Question {
         this.question = question;
     }
 
-    public boolean isTrueAnswer(String answ){ return answers.contains(answ); }
+    public boolean isTrueAnswer(String answ) {
+        return answers.contains(answ);
+    }
 }

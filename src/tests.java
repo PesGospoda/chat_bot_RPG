@@ -1,4 +1,5 @@
 import org.junit.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,13 +10,14 @@ public class tests {
 
 
     @Test
-    public void testGetSum(){
-    	Player player = new Player();
-    	player.getDamage(100);
+    public void testGetSum() {
+        Player player = new Player();
+        player.getDamage(100);
         assertEquals(false, player.isAlive());
     }
+
     @Test
-    public void testParser(){
+    public void testParser() {
         Parser parser = new Parser("testDialogs.txt");
         List<Question> questions = parser.toListQuestions();
         assertEquals(questions.get(0).question, "hello");
