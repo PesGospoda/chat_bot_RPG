@@ -6,20 +6,28 @@ interface Operation {
 }
 
 public class TechnicalCommands {
-    public static Map<String, Operation> listOfCommands = new HashMap<String, Operation>();
+    public Map<String, Operation> listOfCommands = new HashMap<>();
 
-    TechnicalCommands(Player player) {
-        listOfCommands.put("!playerinfo", () -> getPlayerInfo(player));
-        listOfCommands.put("!help", () -> help(player));
+    public TechnicalCommands(Player player) {
+        listOfCommands.put("!playerInfo", () -> print(player.getInfo()));
+        listOfCommands.put("!help", () -> print(help()));
+        listOfCommands.put("!helpEvent", () -> print(player.getCurrentEvent().getInfo()));
+        listOfCommands.put("!exit", () -> {print(exit()); System.exit(0); });
+}
+
+    private void print(String string){
+        System.out.println(string);
     }
 
-    private static void getPlayerInfo(Player player) {
-        System.out.println("Health=" + player.getHealth());
+    private String exit(){
+        return "\nYou didn't think you could get away alive?\n" +
+                "AhAHAhAHaha" +
+                "\n(You get damage - 99999999, and dead)";
     }
 
-    private static void help(Player player) {
-        System.out.println("hello you're in game");
-        System.out.println("there might be help");
-        System.out.println(listOfCommands.keySet());
+    private String help() {
+        return "\nHello you're in game" +
+                "\nthere magics might be help\n" +
+                this.listOfCommands.keySet();
     }
 }

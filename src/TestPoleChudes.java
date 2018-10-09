@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 
 public class TestPoleChudes {
-    public PoleChudes pc = new PoleChudes("test");
+    public PoleChudes pc = new PoleChudes(new Player(),"test");
 
     @Test
     public void testStart() {
@@ -33,7 +33,7 @@ public class TestPoleChudes {
 
     @Test
     public void testCorrectTwoLatters() {
-        pc = new PoleChudes("test");
+        pc = new PoleChudes(new Player(), "test");
         pc.setLetter('t');
         assertEquals(pc.getAnswerWord(), "t..t");
     }

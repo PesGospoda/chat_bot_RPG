@@ -1,8 +1,6 @@
 
 public class PoleChudes extends EventAbstract {
 
-    private String eventName = "PoleChudes";
-
     private String quizWord;
 
     public String getAnswerWord() {
@@ -11,16 +9,16 @@ public class PoleChudes extends EventAbstract {
 
     private StringBuilder answerWord = new StringBuilder();
 
-    private Player player = new Player();
-
-    public String getEventName() {
-        return eventName;
-    }
-
-    public PoleChudes(String quizWord) {
+    public PoleChudes(Player player, String quizWord) {
+        super(player);
         this.quizWord = quizWord;
         for (int i = 0; i < quizWord.length(); i++)
             answerWord.append(".");
+    }
+
+    public String getInfo() {
+        return "\nYou are on the Wheel of Fortune television show!\n" +
+                "Name the letter that you think is in the proposed word and guess the word";
     }
 
     public void setLetter(char letter) {
@@ -35,8 +33,8 @@ public class PoleChudes extends EventAbstract {
         }
     }
 
-    public void execute(Player player) {
-        this.player = player;
+    public void execute() {
+        player.setCurrentEvent(this);
         System.out.println("Welcome on The Game");
         while (player.isAlive() && !quizWord.equals(answerWord.toString())) {
             System.out.println(answerWord);

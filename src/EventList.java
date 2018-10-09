@@ -3,12 +3,11 @@ import java.util.List;
 
 public class EventList {
 
-    List<EventAbstract> events = new ArrayList<EventAbstract>();
+    List<EventAbstract> events = new ArrayList<>();
 
     EventList(Player player) {
-        //events.add(new Tomb());
-        events.add(new PoleChudes("hello"));
-        //events.add(new TestEvent());
+        events.add(new Tomb(player));
+        events.add(new PoleChudes(player, "hello"));
     }
 
     public void Remove(int index) {
