@@ -12,7 +12,7 @@ public class Core {
             int nextEvent = rnd.nextInt(eventsList.Count());
             System.out.println(eventsList.events.get(nextEvent).getInfo());
             eventsList.events.get(nextEvent).execute();
-            eventsList.Remove(nextEvent);
+            eventsList.remove(nextEvent);
             System.out.println("End of event");
 
         }

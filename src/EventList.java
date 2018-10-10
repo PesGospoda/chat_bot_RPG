@@ -10,7 +10,7 @@ public class EventList {
         events.add(new PoleChudes(player, "hello"));
     }
 
-    public void Remove(int index) {
+    public void remove(int index) {
         events.remove(index);
     }
 
