@@ -6,11 +6,12 @@ public class EventList {
     List<EventAbstract> events = new ArrayList<>();
 
     EventList(Player player) {
-        events.add(new Tomb(player));
-        events.add(new PoleChudes(player, "hello"));
+        events.add(new EventTomb(player));
+        events.add(new EventBearFight(player));
+        events.add(new EventQuiz());
     }
 
-    public void remove(int index) {
+    public void Remove(int index) {
         events.remove(index);
     }
 

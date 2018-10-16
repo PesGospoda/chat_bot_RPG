@@ -1,14 +1,10 @@
-
+import java.util.List;
 
 public abstract class EventAbstract {
-    public abstract void execute();
-
-    public EventAbstract(Player player) {
-        this.player = player;
-    }
-
-    protected Player player;
-
     public abstract String getInfo() ;
+    public abstract String checkPlayerAnswer(String answer);
+    public abstract String enter();
+    public abstract String getCurrentQuestion();
+    public abstract boolean checkDispose();
 }
 
