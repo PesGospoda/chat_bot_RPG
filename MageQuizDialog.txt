@@ -1,0 +1,13 @@
+#Hello, stranger are you ready?
+$yes
+$ok
+$let's go
+#What's 2+2?
+$4
+#What's thinner than mosquito's dick
+$urine
+$stream
+$piss
+#155,625 translate it to IEEE754
+$01000011000110111010000000000000
+$431BA000
