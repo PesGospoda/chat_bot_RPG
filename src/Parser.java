@@ -20,7 +20,7 @@ public class Parser {
     }
 
     public List<Question> toListQuestions() {
-        List<Question> result = new ArrayList<Question>();
+        List<Question> result = new ArrayList<>();
         String line;
         int questionIndex = -1;
         try {

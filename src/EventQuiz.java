@@ -8,6 +8,7 @@ public class EventQuiz extends  EventAbstract{
     private boolean isDisposable = true;
 
     EventQuiz() {
+        super(new Player(), true);
         this.parser = new Parser("MageQuizDialog.txt");
         this.listQuest = this.parser.toListQuestions();
     }
@@ -33,16 +34,12 @@ public class EventQuiz extends  EventAbstract{
         }
     }
 
-    public String getCurrentQuestion(){
+    public String nextQuestion(){
         if (questionCounter<listQuest.size())
             return listQuest.get(questionCounter).question;
         else
         {
             return("!exit");
         }
-    }
-
-    public boolean checkDispose(){
-        return isDisposable;
     }
 }

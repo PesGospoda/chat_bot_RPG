@@ -7,8 +7,8 @@ public class EventList {
 
     EventList(Player player) {
         events.add(new EventTomb(player));
-        events.add(new EventBearFight(player));
-        events.add(new EventQuiz());
+       // events.add(new EventBearFight(player));
+       // events.add(new EventQuiz());
     }
 
     public void Remove(int index) {

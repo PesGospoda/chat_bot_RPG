@@ -4,55 +4,53 @@ import java.util.Scanner;
 
 public class Player {
 
-    public Player(int playerID) {
+    public Player(int playerID, String name) {
         this.score = 0;
+        this.name = name;
         this.health = 100;
         this.playerID = playerID;
-        setCurrentEvent(this.eventList.events.get(0));
+        eventList = new EventList(this);
         this.CurrentEventIndex = 0;
     }
+    public Player() {
 
+    }
+    private String name;
     private int score;
     private int health;
     private int playerID;
-    private EventAbstract currentEvent;
     private int CurrentEventIndex;
     private TechnicalCommands techCommands = new TechnicalCommands(this);
-    private EventList eventList = new EventList(this);
+    private EventList eventList;
+    private botTelegram bot;
 
-    public void setCurrentEvent(EventAbstract currentEvent)
-    {
-        this.currentEvent = currentEvent;
-    }
 
     public void nextEvent()
     {
-        if (currentEvent.checkDispose())
+        if (eventList.events.get(CurrentEventIndex).checkDispose())
             eventList.events.remove(CurrentEventIndex);
         Random rnd = new Random();
         int next = rnd.nextInt(eventList.events.size());
         CurrentEventIndex = next;
-        setCurrentEvent(eventList.events.get(next));
+
     }
 
     public EventAbstract getCurrentEvent() {
-        return this.currentEvent;
+        return this.eventList.events.get(CurrentEventIndex);
     }
 
     public Boolean isAlive() {
         return this.health > 0;
     }
 
-    public int getDamage(int damage) {
+    public String getDamage(int damage) {
         health -= damage;
-        System.out.println("(You get damage - " + damage + ")");
-        return health;
+        return "(You get damage - " + damage + ")";
     }
 
-    public int heal(int healPoints) {
+    public String heal(int healPoints) {
         health += healPoints;
-        System.out.println("(You get heal - " + healPoints + ")");
-        return health;
+        return "(You get heal - " + healPoints + ")";
     }
 
     public String getInfo() {

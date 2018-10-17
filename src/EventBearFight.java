@@ -13,6 +13,7 @@ public class EventBearFight extends EventAbstract {
     private Player player;
 
     EventBearFight(Player player) {
+        super(player, true);
         this.rnd = new Random();
         this.bearHP = 300;
         this.player = player;
@@ -53,7 +54,7 @@ public class EventBearFight extends EventAbstract {
         return("bear hits you");
     }
 
-    public String getCurrentQuestion(){
+    public String nextQuestion(){
         if (bearHP<=0) {
             bearHP = 300;
             return ("!exit");
@@ -62,7 +63,4 @@ public class EventBearFight extends EventAbstract {
             return("bear attacks again (1 - move left, 2 - move right, 3 - attack)");
     }
 
-    public boolean checkDispose(){
-        return isDisposable;
-    }
 }

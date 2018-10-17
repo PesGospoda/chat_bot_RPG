@@ -1,91 +1,82 @@
-import org.telegram.telegrambots.ApiContextInitializer;
 //import org.telegram.telegrambots.api.objects.Update;
+
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
-import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import org.telegram.telegrambots.meta.api.methods.updates.GetUpdates;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-import java.awt.*;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Stack;
 
 
-public class botTelegram extends TelegramLongPollingBot{
+public class botTelegram extends TelegramLongPollingBot {
 
     public Map<Integer, Player> listOfPlayers = new HashMap<>();
+    private String BOT_NAME;
+    private String BOT_TOKEN;
 
+    public botTelegram(String botToken, String botUsername) {
+        //super();
+        BOT_NAME = botUsername;
+        BOT_TOKEN = botToken;
+    }
 
-    public static void main(String[] args)
-    {
-        ApiContextInitializer.init(); // Инициализируем api
-        TelegramBotsApi telegramBotApi = new TelegramBotsApi();
-        try {
-            telegramBotApi.registerBot(new botTelegram());
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
-        System.out.println("Working");
+    private void newPlayer(int userID, String chatId, String name) {
+        sendMsg("Hello " + name, chatId);
+        listOfPlayers.put(userID, new Player(userID, name));//core mb
+        sendMsg(listOfPlayers.get(userID).getCurrentEvent().getInfo(), chatId);
+        sendMsg(listOfPlayers.get(userID).getCurrentEvent().enter(), chatId);
+    }
+
+    private void nextEvent(int userID, String chatId){
+        listOfPlayers.get(userID).nextEvent();
+        sendMsg(listOfPlayers.get(userID).getCurrentEvent().getInfo(), chatId);
+        sendMsg(listOfPlayers.get(userID).getCurrentEvent().enter(), chatId);
     }
 
     @Override
     public void onUpdateReceived(Update update) {
         int userID = update.getMessage().getFrom().getId();
+        Player player = listOfPlayers.get(userID);
         Message message = update.getMessage();
         String chatId = message.getChatId().toString();
-        System.out.println(message.getText());
-        if (listOfPlayers.get(userID)==null) {
-            sendMsg("Hello "+update.getMessage().getFrom().getFirstName(), chatId);
-            listOfPlayers.put(userID, new Player(userID));
-            sendMsg(listOfPlayers.get(userID).getCurrentEvent().getInfo(), chatId);
-            sendMsg(listOfPlayers.get(userID).getCurrentEvent().enter(), chatId);
-            sendMsg(update.getMessage().getFrom().toString(), "596865644");
-        }
-        else {
-            if (message != null && message.hasText()) {
-                sendMsg(listOfPlayers.get(userID).getCurrentEvent().checkPlayerAnswer(message.getText()), chatId);
+        if (player == null) {
+            newPlayer(userID, chatId, update.getMessage().getFrom().getFirstName());
+            player = listOfPlayers.get(userID);
+        } else {
+            if (message.hasText()) {
+                sendMsg(player.getCurrentEvent().checkPlayerAnswer(message.getText().toLowerCase()), chatId);
             }
-            if (!listOfPlayers.get(userID).isAlive()) {
+            if (!player.isAlive()) {
                 sendMsg("oops, you're died, but I give you a chance", chatId);
-                listOfPlayers.get(userID).heal(10);
+                player.heal(10);
+                // _-_ hz mb
             }
-            String current  = listOfPlayers.get(userID).getCurrentEvent().getCurrentQuestion();
-            if (current.equals("!exit"))
-            {
+            if (player.getCurrentEvent().nextQuestion() == null) {
                 sendMsg("You complete this part of dungeon", chatId);
-                listOfPlayers.get(userID).nextEvent();
-                sendMsg(listOfPlayers.get(userID).getCurrentEvent().getInfo(), chatId);
-                sendMsg(listOfPlayers.get(userID).getCurrentEvent().enter(), chatId);
-            }
-            else
-                sendMsg(listOfPlayers.get(userID).getCurrentEvent().getCurrentQuestion(), chatId);
+                nextEvent(userID,chatId);
+            } else
+                sendMsg(player.getCurrentEvent().nextQuestion(), chatId);
         }
     }
 
     private void sendMsg(String s, String chatID) {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatID);
-        sendMessage.setText(s);
         try {
-            execute(sendMessage);
-        }
-        catch (TelegramApiException e){
+            execute(new SendMessage().setChatId(chatID).setText(s));
+        } catch (TelegramApiException e) {
             e.printStackTrace();
         }
     }
 
     @Override
     public String getBotUsername() {
-        return "USER";
+        return BOT_NAME;
     }
 
     @Override
     public String getBotToken() {
-        return "578074240:AAEzKIim6j6yusyvsufNS41Z3_G6-a7TvPU";
+        return BOT_TOKEN;
     }
 
 
