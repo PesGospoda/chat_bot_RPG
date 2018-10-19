@@ -11,7 +11,7 @@ public enum Privacy {
    */
   PUBLIC,
   /**
-   * Only group admins would get to initiate this command.
+   * Only group admins would getEvent to initiate this command.
    */
   GROUP_ADMIN,
   /**

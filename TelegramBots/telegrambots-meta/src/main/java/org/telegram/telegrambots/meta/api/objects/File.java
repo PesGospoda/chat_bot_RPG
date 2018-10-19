@@ -23,7 +23,7 @@ public class File implements BotApiObject {
     @JsonProperty(FILE_SIZE_FIELD)
     private Integer fileSize; ///< Optional. File size, if known
     @JsonProperty(FILE_PATH_FIELD)
-    private String filePath; ///< Optional. File path. Use https://api.telegram.org/file/bot<token>/<file_path> to get the file.
+    private String filePath; ///< Optional. File path. Use https://api.telegram.org/file/bot<token>/<file_path> to getEvent the file.
 
     public File() {
         super();

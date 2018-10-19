@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * @author Ruben Bermudez
  * @version 1.0
- * @brief Use this method to get a list of profile pictures for a user. Returns a UserProfilePhotos object.
+ * @brief Use this method to getEvent a list of profile pictures for a user. Returns a UserProfilePhotos object.
  * @date 20 of June of 2015
  */
 public class GetUserProfilePhotos extends BotApiMethod<UserProfilePhotos> {

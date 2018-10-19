@@ -41,7 +41,7 @@ public class SendAnimation extends PartialBotApiMethod<Message> {
     private String chatId; ///< Unique identifier for the chat to send the message to (Or username for channels)
     /**
      * Animation to send. Pass a file_id as String to send an animation that exists on the
-     * Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get an animation
+     * Telegram servers (recommended), pass an HTTP URL as a String for Telegram to getEvent an animation
      * from the Internet, or upload a new animation using multipart/form-data.
      */
     private InputFile animation;

@@ -56,14 +56,14 @@ public interface ICommandRegistry {
     Map<IBotCommand, Boolean> deregisterAll(IBotCommand... botCommands);
 
     /**
-     * get a collection of all registered commands
+     * getEvent a collection of all registered commands
      *
      * @return a collection of registered commands
      */
     Collection<IBotCommand> getRegisteredCommands();
 
     /**
-     * get registered command
+     * getEvent registered command
      *
      * @return registered command if exists or null if not
      */

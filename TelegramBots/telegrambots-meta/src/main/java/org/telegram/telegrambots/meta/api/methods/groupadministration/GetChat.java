@@ -17,7 +17,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 /**
  * @author Ruben Bermudez
  * @version 1.0
- * Use this method to get information about the chat. Returns Chat object on success.
+ * Use this method to getEvent information about the chat. Returns Chat object on success.
  */
 public class GetChat extends BotApiMethod<Chat> {
     public static final String PATH = "getChat";

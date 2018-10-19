@@ -15,7 +15,7 @@ import java.util.Objects;
 /**
  * @author Ruben Bermudez
  * @version 1.0
- * @brief Use this method to get information about a member of a chat.
+ * @brief Use this method to getEvent information about a member of a chat.
  * Returns a ChatMember object on success.
  * @date 20 of May of 2016
  */

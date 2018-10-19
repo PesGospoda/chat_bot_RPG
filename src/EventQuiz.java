@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class EventQuiz extends  EventAbstract{
+public class EventQuiz{
 
     private Parser parser;
     public List<Question> listQuest;
@@ -8,17 +8,17 @@ public class EventQuiz extends  EventAbstract{
     private boolean isDisposable = true;
 
     EventQuiz() {
-        super(new Player(), true);
+        //super(new Player(), true);
         this.parser = new Parser("MageQuizDialog.txt");
         this.listQuest = this.parser.toListQuestions();
     }
 
     public String getInfo() {
         return "\n You see an old man, he looks wise.\n Answer questions or die...\n" +
-                "(for each wrong answer you get damage)";
+                "(for each wrong answer you getEvent damage)";
     }
 
-    public String enter(){
+    public String start(){
         return listQuest.get(0).question;
     }
 

@@ -15,7 +15,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 /**
  * @author Ruben Bermudez
  * @version 1.0
- * Use this method to get a sticker set. On success, a StickerSet object is returned.
+ * Use this method to getEvent a sticker set. On success, a StickerSet object is returned.
  */
 public class GetStickerSet extends BotApiMethod<StickerSet> {
     private static final String PATH = "getStickerSet";

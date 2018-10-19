@@ -31,7 +31,7 @@ import java.util.ArrayList;
 /**
  * @author Ruben Bermudez
  * @version 2.4
- * @brief Use this method to get data for high score tables.
+ * @brief Use this method to getEvent data for high score tables.
  * Will return the score of the specified user and several of his neighbors in a game.
  * On success, returns an Array of GameHighScore objects.
  *

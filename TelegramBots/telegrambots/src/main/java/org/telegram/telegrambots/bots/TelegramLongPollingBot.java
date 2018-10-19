@@ -8,7 +8,7 @@ import org.telegram.telegrambots.util.WebhookUtils;
 /**
  * @author Ruben Bermudez
  * @version 1.0
- * Base abstract class for a bot that will get updates using
+ * Base abstract class for a bot that will getEvent updates using
  * <a href="https://core.telegram.org/bots/api#getupdates">long-polling</a> method
  */
 public abstract class TelegramLongPollingBot extends DefaultAbsSender implements LongPollingBot {

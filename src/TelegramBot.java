@@ -10,29 +10,22 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class botTelegram extends TelegramLongPollingBot {
+public class TelegramBot extends TelegramLongPollingBot {
 
     public Map<Integer, Player> listOfPlayers = new HashMap<>();
     private String BOT_NAME;
     private String BOT_TOKEN;
 
-    public botTelegram(String botToken, String botUsername) {
-        //super();
+    public TelegramBot(String botToken, String botUsername) {
+        super();
         BOT_NAME = botUsername;
         BOT_TOKEN = botToken;
     }
 
-    private void newPlayer(int userID, String chatId, String name) {
+    private void newPlayer(int userID, long chatId, String name) {
         sendMsg("Hello " + name, chatId);
-        listOfPlayers.put(userID, new Player(userID, name));//core mb
-        sendMsg(listOfPlayers.get(userID).getCurrentEvent().getInfo(), chatId);
-        sendMsg(listOfPlayers.get(userID).getCurrentEvent().enter(), chatId);
-    }
-
-    private void nextEvent(int userID, String chatId){
-        listOfPlayers.get(userID).nextEvent();
-        sendMsg(listOfPlayers.get(userID).getCurrentEvent().getInfo(), chatId);
-        sendMsg(listOfPlayers.get(userID).getCurrentEvent().enter(), chatId);
+        listOfPlayers.put(userID, new Player(userID, chatId, name, this));//core mb
+        listOfPlayers.get(userID).getCurrentEvent().start();
     }
 
     @Override
@@ -40,30 +33,23 @@ public class botTelegram extends TelegramLongPollingBot {
         int userID = update.getMessage().getFrom().getId();
         Player player = listOfPlayers.get(userID);
         Message message = update.getMessage();
-        String chatId = message.getChatId().toString();
+        long chatId = message.getChatId();
         if (player == null) {
             newPlayer(userID, chatId, update.getMessage().getFrom().getFirstName());
-            player = listOfPlayers.get(userID);
         } else {
             if (message.hasText()) {
-                sendMsg(player.getCurrentEvent().checkPlayerAnswer(message.getText().toLowerCase()), chatId);
+                player.getCurrentEvent().checkPlayerAnswer(message.getText().toLowerCase());
             }
             if (!player.isAlive()) {
-                sendMsg("oops, you're died, but I give you a chance", chatId);
+                sendMsg("oops, you're died, but I give you a chance", chatId);//!!
                 player.heal(10);
-                // _-_ hz mb
             }
-            if (player.getCurrentEvent().nextQuestion() == null) {
-                sendMsg("You complete this part of dungeon", chatId);
-                nextEvent(userID,chatId);
-            } else
-                sendMsg(player.getCurrentEvent().nextQuestion(), chatId);
         }
     }
 
-    private void sendMsg(String s, String chatID) {
+    public void sendMsg(String s, long chatID) {
         try {
-            execute(new SendMessage().setChatId(chatID).setText(s));
+            execute(new SendMessage().setChatId(chatID).setText(s).enableMarkdown(true));
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }

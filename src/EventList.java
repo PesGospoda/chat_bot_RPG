@@ -3,19 +3,24 @@ import java.util.List;
 
 public class EventList {
 
-    List<EventAbstract> events = new ArrayList<>();
+    List<Event> events;
 
     EventList(Player player) {
+        events = new ArrayList<>();
         events.add(new EventTomb(player));
-       // events.add(new EventBearFight(player));
-       // events.add(new EventQuiz());
+        // events.add(new EventBearFight(player));
+        // events.add(new EventQuiz());
     }
 
-    public void Remove(int index) {
+    public void remove(int index) {
         events.remove(index);
     }
 
-    public int Count() {
+    public Event getEvent(int index) {
+        return events.get(index);
+    }
+
+    public int count() {
         return events.size();
     }
 

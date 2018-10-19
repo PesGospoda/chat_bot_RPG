@@ -26,8 +26,8 @@ import static org.apache.commons.lang3.StringUtils.*;
  * <li>A reply to a sequence of actions</li>
  * </ol>
  * <p>
- * In-order to instantiate an ability, you can call {@link Ability#builder()} to get the {@link AbilityBuilder}.
- * Once you're done setting your ability, you'll call {@link AbilityBuilder#build()} to get your constructed ability.
+ * In-order to instantiate an ability, you can call {@link Ability#builder()} to getEvent the {@link AbilityBuilder}.
+ * Once you're done setting your ability, you'll call {@link AbilityBuilder#build()} to getEvent your constructed ability.
  * <p>
  * The only optional fields in an ability are {@link Ability#info}, {@link Ability#postAction}, {@link Ability#flags} and {@link Ability#replies}.
  *

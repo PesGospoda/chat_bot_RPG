@@ -16,7 +16,7 @@ To download a picture (or any other file), you will need the `file_path` of the 
 public PhotoSize getPhoto(Update update) {
     // Check that the update contains a message and the message has a photo
     if (update.hasMessage() && update.getMessage().hasPhoto()) {
-        // When receiving a photo, you usually get different sizes of it
+        getEvent
         List<PhotoSize> photos = update.getMessage().getPhoto();
 
         // We fetch the bigger photo

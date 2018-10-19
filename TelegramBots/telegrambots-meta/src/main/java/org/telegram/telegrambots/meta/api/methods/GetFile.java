@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * @author Ruben Bermudez
  * @version 1.0
- * @brief Use this method to get basic info about a file and prepare it for downloading.
+ * @brief Use this method to getEvent basic info about a file and prepare it for downloading.
  * For the moment, bots can download files of up to 20MB in size.
  * On success, a File object is returned.
  * The file can then be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>,
@@ -28,7 +28,7 @@ public class GetFile extends BotApiMethod<File> {
     private static final String FILEID_FIELD = "file_id";
 
     @JsonProperty(FILEID_FIELD)
-    private String fileId; ///< File identifier to get info about
+    private String fileId; ///< File identifier to getEvent info about
 
     public GetFile() {
         super();

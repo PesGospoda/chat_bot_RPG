@@ -16,7 +16,7 @@ public abstract class DefaultBotCommand extends BotCommand {
      * Construct a command
      *
      * @param commandIdentifier the unique identifier of this command (e.g. the command string to
-     *                          enter into chat)
+     *                          start into chat)
      * @param description       the description of this command
      */
     public DefaultBotCommand(String commandIdentifier, String description) {

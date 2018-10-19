@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 
-public class EventBearFight extends EventAbstract {
+public class EventBearFight {
     private int bearAttack;
     private int bearHP;
     private Random rnd;
@@ -13,7 +13,7 @@ public class EventBearFight extends EventAbstract {
     private Player player;
 
     EventBearFight(Player player) {
-        super(player, true);
+       // super(player, true);
         this.rnd = new Random();
         this.bearHP = 300;
         this.player = player;
@@ -23,7 +23,7 @@ public class EventBearFight extends EventAbstract {
         return "\n You meet bear.\n fight or die (1 - move left, 2 - move right, 3 - attack)";
     }
 
-    public String enter(){
+    public String start(){
         bearAttack = rnd.nextInt(3) + 1;
         return "Bear is attacking, defend!!!";
     }

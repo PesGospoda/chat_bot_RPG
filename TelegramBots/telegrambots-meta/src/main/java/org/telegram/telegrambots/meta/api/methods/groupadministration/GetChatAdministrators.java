@@ -16,7 +16,7 @@ import java.util.Objects;
 /**
  * @author Ruben Bermudez
  * @version 1.0
- * @brief Use this method to get a list of administrators in a chat.
+ * @brief Use this method to getEvent a list of administrators in a chat.
  * An Array of ChatMember objects is returned on success,
  * containing information about all chat administrators except other bots.
  * If the chat is a group or a supergroup and no administrators were appointed,

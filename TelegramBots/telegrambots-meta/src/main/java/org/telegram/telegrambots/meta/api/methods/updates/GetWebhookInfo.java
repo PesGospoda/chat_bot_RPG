@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * @author Ruben Bermudez
  * @version 2.4
- * @brief Use this method to get current webhook status.
+ * @brief Use this method to getEvent current webhook status.
  * Requires no parameters.
  * On success, returns a WebhookInfo object.
  * Will throw an error, if the bot is using getUpdates.

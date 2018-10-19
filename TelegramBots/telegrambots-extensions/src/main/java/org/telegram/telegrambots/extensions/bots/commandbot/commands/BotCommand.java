@@ -22,7 +22,7 @@ public abstract class BotCommand implements IBotCommand {
      * Construct a command
      *
      * @param commandIdentifier the unique identifier of this command (e.g. the command string to
-     *                          enter into chat)
+     *                          start into chat)
      * @param description       the description of this command
      */
     public BotCommand(String commandIdentifier, String description) {

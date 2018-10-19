@@ -27,18 +27,10 @@ We'll be introducing an ability that maintains a special counter for every user.
           // Get and increment counter, put it back in the map
           Integer counter = countMap.compute(String.valueOf(userId), (id, count) -> count == null ? 1 : ++count);
 
-          /*
+          get
+Event
 
-          Without lambdas implementation of incrementing
 
-          int counter;
-          if (countMap.containsKey(userId))
-            counter = countMap.get(userId) + 1;
-          else
-            counter = 1;
-          countMap.put(userId, counter);
-
-          */
 
           // Send formatted will enable markdown
           String message = String.format("%s, your count is now *%d*!", ctx.user().shortName(), counter);

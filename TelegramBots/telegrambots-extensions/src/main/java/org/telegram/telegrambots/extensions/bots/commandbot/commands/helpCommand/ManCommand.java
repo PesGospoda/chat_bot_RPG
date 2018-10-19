@@ -8,7 +8,7 @@ public abstract class ManCommand extends BotCommand implements IManCommand {
 	
 	/**
 	 * Create a new ManCommand providing a commandIdentifier, a short description and the extended description
-	 * @param commandIdentifier the unique identifier of this command (e.g. the command string to enter into chat)
+	 * @param commandIdentifier the unique identifier of this command (e.g. the command string to start into chat)
      * @param description the description of this command
 	 * @param extendedDescription The extended Description for the Command, should provide detailed information about arguments and possible options
 	 */

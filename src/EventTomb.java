@@ -1,1 +1,53 @@
-import org.telegram.telegrambots.meta.api.methods.send.SendMessage;import org.telegram.telegrambots.meta.exceptions.TelegramApiException;import java.util.List;public class EventTomb extends EventAbstract {    private List<Question> listQuest;    EventTomb(Player player) {        super(player, true);        this.listQuest = new Parser("ArakanDialog.txt").toListQuestions();    }    public String getInfo() {        return "\n You are in the tomb of the Great Arakan.\n Answer questions or die...\n" +                "(for each wrong answer you get damage)";    }    public String enter() {        return listQuest.get(0).question;    }    public String checkPlayerAnswer(String answer) {        if (listQuest.get(questionCounter).answers.contains(answer)) {            questionCounter += 1;            return ("Good");        } else {            player.getDamage(50);            questionCounter += 1;            return ("NO, MORTAL");        }    }    public String nextQuestion() {        if (questionCounter < listQuest.size())            return listQuest.get(questionCounter).question;        else {            return null;        }    }}
+import java.util.List;
+
+
+public class EventTomb extends Event {
+    private List<Question> listQuest;
+    private int questionCounter;
+
+    EventTomb(Player player) {
+        super(player, true);
+        this.listQuest = new Parser("ArakanDialog.txt").toListQuestions();
+        questionCounter = 0;
+    }
+
+    public void getInfo() {
+        player.sendMsg("\n You are in the tomb of the Great Arakan.\n Answer questions or die...\n" +
+                "(for each wrong answer you getEvent damage)");
+    }
+
+    public void start() {
+        player.sendMsg("Добро пожаловать, смертный");
+        player.sendMsg(listQuest.get(0).question);
+    }
+
+    public void checkPlayerAnswer(String answer) {
+        if (answer.charAt(0) == '!') {
+            super.checkPlayerAnswer(answer);
+            return;
+        }
+        if (listQuest.get(questionCounter).answers.contains(answer)) {
+            player.sendMsg("Хорошо след вопрос");
+            nextQuestion();
+        } else {
+            player.sendMsg("нет, лови фаербол в лицо и поробуй попробуй еще");
+            player.getDamage(50);
+            player.sendMsg(listQuest.get(questionCounter).question);
+        }
+    }
+
+    public void nextQuestion() {
+        questionCounter += 1;
+        if (questionCounter < listQuest.size())
+            player.sendMsg(listQuest.get(questionCounter).question);
+        else {
+            end();
+        }
+    }
+
+    public void end() {
+        player.sendMsg("You complete this tomb of dungeon");
+        player.nextEvent();
+    }
+}
+

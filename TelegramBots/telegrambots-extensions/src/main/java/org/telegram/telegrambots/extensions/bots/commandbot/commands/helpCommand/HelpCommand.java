@@ -81,7 +81,7 @@ public class HelpCommand extends ManCommand {
 	
 	/**
 	 * Creates a Help Command with custom identifier, description and extended Description
-	* @param commandIdentifier the unique identifier of this command (e.g. the command string to enter into chat)
+	* @param commandIdentifier the unique identifier of this command (e.g. the command string to start into chat)
      * @param description the description of this command
 	 * @param extendedDescription The extended Description for the Command, should provide detailed information about arguments and possible options
 	 */

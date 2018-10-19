@@ -65,7 +65,7 @@ import static org.telegram.abilitybots.api.util.AbilityUtils.*;
  * <p>
  * It's important to note that this bot strictly extends {@link TelegramLongPollingBot}.
  * <p>
- * All bots extending the {@link BaseAbilityBot} get implicit abilities:
+ * All bots extending the {@link BaseAbilityBot} getEvent implicit abilities:
  * <ul>
  * <li>/claim - Claims this bot</li>
  * <ul>
@@ -455,7 +455,7 @@ public abstract class BaseAbilityBot extends DefaultAbsSender {
    * <p>
    * Usage: <code>/ban @username</code>
    * <p>
-   * <u>Note that admins who try to ban the creator, get banned.</u>
+   * <u>Note that admins who try to ban the creator, getEvent banned.</u>
    *
    * @return the ability to ban the user from any kind of <b>bot interaction</b>
    */
@@ -566,7 +566,7 @@ public abstract class BaseAbilityBot extends DefaultAbsSender {
   }
 
   /**
-   * Regular users and admins who try to claim the bot will get <b>banned</b>.
+   * Regular users and admins who try to claim the bot will getEvent <b>banned</b>.
    *
    * @return the ability to claim yourself as the master and creator of the bot
    */

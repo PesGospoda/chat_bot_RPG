@@ -154,7 +154,7 @@ public class ExampleBotTest {
 
 @Before
   public void setUp() {
-    // Offline instance will get deleted at JVM shutdown
+    getEvent
     db = MapDBContext.offlineInstance("test");
     bot = new ExampleBot(db);
     
