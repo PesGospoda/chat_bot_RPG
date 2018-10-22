@@ -14,6 +14,7 @@ public class TechnicalCommands {
         listOfCommands.put("!help", () -> player.sendMsg(help()));
         listOfCommands.put("!helpevent", () -> player.getCurrentEvent().getInfo());
         listOfCommands.put("!exit", () -> player.getBot().listOfPlayers.remove(player.getPlayerID()));
+        listOfCommands.put("!nextevent", player::nextEvent);
     }
 
     public Boolean contains(String command) {
