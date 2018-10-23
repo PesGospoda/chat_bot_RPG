@@ -18,7 +18,7 @@ public class Player {
         this.bot = bot;
         this.playerID = playerID;
         eventList = new EventList(this);
-        this.currentEventIndex =  new Random().nextInt(eventList.events.size());
+        this.currentEventIndex = new Random().nextInt(eventList.events.size());
         //test sendMsg("```######\n#######\n####   ##\n########```");
     }
 

@@ -11,6 +11,7 @@ public class EventQuiz extends Event {
         questionCounter = 0;
     }
 
+    @Override
     public void getInfo() {
         player.sendMsg("Answer questions or die...\n" +
                 "(for each wrong answer you getEvent damage)");
@@ -21,8 +22,9 @@ public class EventQuiz extends Event {
         player.sendMsg(listQuest.get(0).question);
     }
 
+    @Override
     public void checkPlayerAnswer(String answer) {
-        if (answer.charAt(0) == '!') {//надо спросить про это, не трожь пока 
+        if (answer.charAt(0) == '!') {//надо спросить про это, не трожь пока
             super.checkPlayerAnswer(answer);
             return;
         }
@@ -35,6 +37,7 @@ public class EventQuiz extends Event {
         nextQuestion();
     }
 
+    @Override
     public void nextQuestion() {
         questionCounter += 1;
         if (questionCounter < listQuest.size())
