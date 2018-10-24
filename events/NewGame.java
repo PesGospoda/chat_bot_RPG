@@ -5,7 +5,7 @@ public class NewGame extends Event {
 
     @Override
     public void getInfo() {
-        player.sendMsg("```New game? (yes/no)```");
+        player.sendMsg("New game? ```(yes/no)```");
     }
 
     @Override

@@ -26,11 +26,6 @@ public abstract class Event {
         techCommands = new TechnicalCommands(player);
     }
 
-    public TelegramBot getBot() {
-        return player.getBot();
-    }
-
-
     public boolean checkDispose() {
         return isDisposable;
     }

@@ -5,7 +5,6 @@ public class EventBearFight extends Event {
     private int bearAttack;
     private int bearHP;
     private Random rnd;
-    private boolean isDisposable = false;
     private Player player;
 
     EventBearFight(Player player) {
@@ -48,6 +47,7 @@ public class EventBearFight extends Event {
             player.getDamage(10);
             player.sendMsg("bear hits you");
         }
+        nextQuestion();
     }
 
     public void nextQuestion() {

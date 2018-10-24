@@ -20,10 +20,4 @@ public class NewMain {
 
         System.out.println("Working");
     }
-
-    private static void useVidalia() {
-        System.getProperties().put("proxySet", "true");
-        System.getProperties().put("socksProxyHost", "127.0.0.1");
-        System.getProperties().put("socksProxyPort", "9150");
-    }
 }

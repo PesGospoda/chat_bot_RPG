@@ -1,43 +1,49 @@
 import java.util.List;
 
-public class EventQuiz extends Event {
 
+public class EventTomb extends Event {
     private List<Question> listQuest;
     private int questionCounter;
 
-    EventQuiz(Player player) {
+    EventTomb(Player player) {
         super(player, true);
-        this.listQuest = new Parser("MageQuizDialog.txt").toListQuestions();
+        this.listQuest = new Parser("data/ArakanDialog.txt").toListQuestions();
         questionCounter = 0;
     }
 
-    @Override
     public void getInfo() {
-        player.sendMsg("Answer questions or die...\n" +
+        player.sendMsg("\n You are in the tomb of the Great Arakan.\n Answer questions or die...\n" +
                 "(for each wrong answer you getEvent damage)");
     }
 
+    public List<Question> getListQuest() {
+        return listQuest;
+    }
+
+    public int getQuestionCounter() {
+        return questionCounter;
+    }
+
     public void start() {
-        player.sendMsg("Добро пожаловать, смертный \n You see an old man, he looks wise.");
+        player.sendMsg("Welcome in Arakan tomb, mortal ");
         player.sendMsg(listQuest.get(0).question);
     }
 
-    @Override
     public void checkPlayerAnswer(String answer) {
         if (answer.charAt(0) == '!') {//надо спросить про это, не трожь пока
             super.checkPlayerAnswer(answer);
             return;
         }
         if (listQuest.get(questionCounter).answers.contains(answer)) {
-            player.sendMsg("Yes, this is good answer");
+            player.sendMsg("Good, next question");
+            nextQuestion();
         } else {
-            player.sendMsg("NO, STUPID MAN");
-            player.getDamage(10);
+            player.sendMsg("NO! Wrong answer. Catch fireball");
+            player.getDamage(20);
+            player.sendMsg(listQuest.get(questionCounter).question);
         }
-        nextQuestion();
     }
 
-    @Override
     public void nextQuestion() {
         questionCounter += 1;
         if (questionCounter < listQuest.size())
@@ -47,9 +53,9 @@ public class EventQuiz extends Event {
         }
     }
 
-    @Override
     public void end() {
         player.sendMsg("You complete this tomb of dungeon");
         player.nextEvent();
     }
 }
+

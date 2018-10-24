@@ -13,7 +13,7 @@ public class TechnicalCommands {
         listOfCommands.put("!playerinfo", player::getInfo);
         listOfCommands.put("!help", () -> player.sendMsg(help()));
         listOfCommands.put("!helpevent", () -> player.getCurrentEvent().getInfo());
-        listOfCommands.put("!exit", () -> player.getBot().listOfPlayers.remove(player.getPlayerID()));
+        //listOfCommands.put("!exit", () -> player.getBot().listOfPlayers.remove(player.getPlayerID()));
         listOfCommands.put("!nextevent", player::nextEvent);
     }
 

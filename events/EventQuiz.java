@@ -1,41 +1,43 @@
 import java.util.List;
 
+public class EventQuiz extends Event {
 
-public class EventTomb extends Event {
     private List<Question> listQuest;
     private int questionCounter;
 
-    EventTomb(Player player) {
+    EventQuiz(Player player) {
         super(player, true);
-        this.listQuest = new Parser("ArakanDialog.txt").toListQuestions();
+        this.listQuest = new Parser("data/MageQuizDialog.txt").toListQuestions();
         questionCounter = 0;
     }
 
+    @Override
     public void getInfo() {
-        player.sendMsg("\n You are in the tomb of the Great Arakan.\n Answer questions or die...\n" +
+        player.sendMsg("Answer questions or die...\n" +
                 "(for each wrong answer you getEvent damage)");
     }
 
     public void start() {
-        player.sendMsg("Добро пожаловать, смертный");
+        player.sendMsg("\n You see an old man, he looks wise.");
         player.sendMsg(listQuest.get(0).question);
     }
 
+    @Override
     public void checkPlayerAnswer(String answer) {
-        if (answer.charAt(0) == '!') {//надо спросить про это, не трожь пока
+        if (answer.charAt(0) == '!') {
             super.checkPlayerAnswer(answer);
             return;
         }
         if (listQuest.get(questionCounter).answers.contains(answer)) {
-            player.sendMsg("Хорошо след вопрос");
-            nextQuestion();
+            player.sendMsg("Yes, this is good answer");
         } else {
-            player.sendMsg("нет, лови фаербол в лицо и поробуй попробуй еще");
-            player.getDamage(50);
-            player.sendMsg(listQuest.get(questionCounter).question);
+            player.sendMsg("NO, STUPID MAN");
+            player.getDamage(10);
         }
+        nextQuestion();
     }
 
+    @Override
     public void nextQuestion() {
         questionCounter += 1;
         if (questionCounter < listQuest.size())
@@ -45,9 +47,9 @@ public class EventTomb extends Event {
         }
     }
 
+    @Override
     public void end() {
         player.sendMsg("You complete this tomb of dungeon");
         player.nextEvent();
     }
 }
-

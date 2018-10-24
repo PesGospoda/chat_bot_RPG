@@ -1,45 +1,51 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Player {
 
-    public TelegramBot getBot() {
-        return bot;
-    }
 
     public long getChatID() {
         return chatID;
     }
 
-    public Player(int playerID, long chatID, String name, TelegramBot bot) {
-        this.score = 0;
-        this.name = name;
-        this.health = 100;
-        this.chatID = chatID;
-        this.bot = bot;
-        this.playerID = playerID;
-        eventList = new EventList(this);
-        this.currentEventIndex = new Random().nextInt(eventList.events.size());
-        //test sendMsg("```######\n#######\n####   ##\n########```");
-    }
-
-    public Player() {
-
-    }
-
     private String name;
     private int score;
     private int health;
-
-    public int getPlayerID() {
-        return playerID;
-    }
+    public List<String> msgs;
 
     private int playerID;
     private long chatID;
     private int currentEventIndex;
     private EventList eventList;
-    private TelegramBot bot;
 
+    public Player(int playerID, long chatID, String name) {
+        this.score = 0;
+        this.name = name;
+        this.health = 100;
+        this.chatID = chatID;
+        this.playerID = playerID;
+        eventList = new EventList(this);
+        this.currentEventIndex = new Random().nextInt(eventList.events.size());
+        this.msgs = new ArrayList<>();
+    }
+
+    public void sendMsg(String text) {
+        msgs.add(text);
+        //getBot().sendMsg(text, getChatID());
+    }
+
+    public void getInfo() {
+        sendMsg("\nPerson's information: " +
+                "\nYour health " + health +
+                "\nYour score: " + score);
+    }
+
+    public void newGame() {
+        health = 100;
+        // ?? score = 0;
+        eventList = new EventList(this);
+    }
 
     public void nextEvent() // это можна в лист евентов пихнуть
     {
@@ -53,6 +59,26 @@ public class Player {
         }
         getCurrentEvent().start();
 
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public List<String> getMsgs() {
+        return msgs;
+    }
+
+    public int getCurrentEventIndex() {
+        return currentEventIndex;
+    }
+
+    public EventList getEventList() {
+        return eventList;
+    }
+
+    public int getPlayerID() {
+        return playerID;
     }
 
     public Event getCurrentEvent() {
@@ -73,21 +99,5 @@ public class Player {
         sendMsg("(You getEvent heal - " + healPoints + ")");
     }
 
-    public void sendMsg(String text) {
-        getBot().sendMsg(text, getChatID());
-    }
 
-    public void getInfo() {
-        sendMsg("\nPerson's information: " +
-                "\nYour health " + health +
-                "\nYour score: " + score);
-    }
-
-    public void newGame() {
-        health = 100;
-        // ?? score = 0;
-        eventList = new EventList(this);//wtf почему конструктор не подрубается и без эвентов создается???
-        // если не сможешь исправить запили в евентлисте метод который будет сразу все добавлять
-        eventList.events.add(new EventTomb(this));
-    }
 }
