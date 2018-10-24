@@ -22,17 +22,17 @@ public class TelegramBot extends TelegramLongPollingBot {
     private String BOT_NAME;
     private String BOT_TOKEN;
 //tg://proxy?server=136.0.99.154&port=3256&secret=0123456789abcdef0123456789abcdef
-    public static DefaultBotOptions create(){
-        var opt = new DefaultBotOptions();
-
-        var http = new HttpHost("142.93.97.13", 3256);
-        opt.setRequestConfig(RequestConfig.custom().setAuthenticationEnabled(false).setProxy(http).build());
-        return opt;
-    }
+    //public static DefaultBotOptions create(){
+    //    var opt = new DefaultBotOptions();
+//
+    //    var http = new HttpHost("142.93.97.13", 3256);
+    //    opt.setRequestConfig(RequestConfig.custom().setAuthenticationEnabled(false).setProxy(http).build());
+     //   return opt;
+    //}
 
     public TelegramBot(String botToken, String botUsername) {
 
-        super(create());
+        super();
         BOT_NAME = botUsername;
         BOT_TOKEN = botToken;
 
@@ -55,7 +55,7 @@ public class TelegramBot extends TelegramLongPollingBot {
             newPlayer(userID, chatId, update.getMessage().getFrom().getFirstName());
         } else {
             if (!player.isAlive()) {
-                sendFoto("https://www.geekalerts.com/u/Dark-Souls-You-Died-Tee1-e1471365276776.jpg", player.getChatID());
+                //sendFoto("https://www.geekalerts.com/u/Dark-Souls-You-Died-Tee1-e1471365276776.jpg", player.getChatID());
                 listOfPlayers.remove(userID);
             } else if (message.hasText()) {
                 player.getCurrentEvent().checkPlayerAnswer(message.getText().toLowerCase());
@@ -73,13 +73,13 @@ public class TelegramBot extends TelegramLongPollingBot {
         player.msgs = new ArrayList<>();
     }
 
-    public void sendFoto(String foto, long chatId) {
-        try {
-            execute(new SendPhoto().setPhoto(foto).setChatId(chatId));
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
-    }
+    //public void sendFoto(String foto, long chatId) {
+    //    try {
+    //        execute(new SendPhoto().setPhoto(foto).setChatId(chatId));
+    //    } catch (TelegramApiException e) {
+    //        e.printStackTrace();
+    //    }
+    //}
 
     public void sendMsg(String s, long chatID) {
         try {

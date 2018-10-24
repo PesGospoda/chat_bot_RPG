@@ -18,6 +18,8 @@ public class Player {
     private long chatID;
     private int currentEventIndex;
     private EventList eventList;
+    private List<Event> dungeonEventList;
+    private Random rnd = new Random();
 
     public Player(int playerID, long chatID, String name) {
         this.score = 0;
@@ -26,8 +28,11 @@ public class Player {
         this.chatID = chatID;
         this.playerID = playerID;
         eventList = new EventList(this);
-        this.currentEventIndex = new Random().nextInt(eventList.events.size());
+        //this.currentEventIndex = new Random().nextInt(eventList.events.size());
         this.msgs = new ArrayList<>();
+        this.dungeonEventList =new ArrayList<Event>();
+        dungeonEventList.add(new EventMenu(this));
+        this.currentEventIndex = 0;
     }
 
     public void sendMsg(String text) {
@@ -49,14 +54,22 @@ public class Player {
 
     public void nextEvent() // это можна в лист евентов пихнуть
     {
-        if (eventList.getEvent(currentEventIndex).checkDispose())
-            eventList.remove(currentEventIndex);
-        if (eventList.count() == 0) {
-            eventList.events.add(new NewGame(this));
-            currentEventIndex = 0;
-        } else {
-            currentEventIndex = new Random().nextInt(eventList.events.size());
+        if (currentEventIndex +1 == dungeonEventList.size())
+        {
+            dungeonEventList.clear();
+            dungeonEventList.add(new EventMenu(this));
+            currentEventIndex=0;
         }
+        else
+            currentEventIndex+=1;
+        //if (eventList.getEvent(currentEventIndex).checkDispose())
+        //    eventList.remove(currentEventIndex);
+        //if (eventList.count() == 0) {
+        //    eventList.events.add(new NewGame(this));
+        //    currentEventIndex = 0;
+        //} else {
+        //    currentEventIndex = new Random().nextInt(eventList.events.size());
+        //}
         getCurrentEvent().start();
 
     }
@@ -82,7 +95,7 @@ public class Player {
     }
 
     public Event getCurrentEvent() {
-        return this.eventList.events.get(currentEventIndex);
+        return this.dungeonEventList.get(currentEventIndex);
     }
 
     public Boolean isAlive() {
@@ -97,6 +110,16 @@ public class Player {
     public void heal(int healPoints) {
         health += healPoints;
         sendMsg("(You getEvent heal - " + healPoints + ")");
+    }
+
+    public void makeEasyDungeon() {
+        int numberOfEvents = rnd.nextInt(3) + 1;
+        dungeonEventList.clear();
+        for (int i = 0; i < numberOfEvents; i++) {
+            int nextIndex = rnd.nextInt(eventList.events.size());
+            dungeonEventList.add(eventList.events.get(nextIndex).execute());
+            sendMsg(dungeonEventList.get(i).toString());
+        }
     }
 
 
