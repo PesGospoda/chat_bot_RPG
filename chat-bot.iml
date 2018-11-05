@@ -97,5 +97,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="c3p0-0.9.1-pre6" level="project" />
   </component>
 </module>

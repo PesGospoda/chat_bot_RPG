@@ -28,6 +28,7 @@ public class EventPsycho extends Event{
 
     public void checkPlayerAnswer(String answer){
         if (listQuest.get(questionCounter).answers.contains(answer)) {
+            player.upExperience(10);
             player.sendMsg ("AAARRRGGHHHH IT's A RIGHT ANSWER!!!!");
         }
         else

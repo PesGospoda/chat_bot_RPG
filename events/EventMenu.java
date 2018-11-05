@@ -30,7 +30,7 @@ public class EventMenu extends Event {
         {
             player.sendMsg("enterting easy dungeon");
             player.makeEasyDungeon();
-            end();
+            //end();
         }
         if (answer.equals("shop"))
         {

@@ -11,7 +11,7 @@ public class NewGame extends Event {
     @Override
     public void checkPlayerAnswer(String answer) {
         if (answer.equals("yes")) {
-            player.newGame();
+            //player.newGame();
             end();
         } else
             player.sendMsg("Then go out!");
