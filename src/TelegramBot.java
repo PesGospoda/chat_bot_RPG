@@ -52,6 +52,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     private void newPlayer(int userID, long chatId, String name) {
         sendMsg("Hello " + name, chatId);
+        System.out.println("newPlayer");
         listOfPlayersInDungeon.put(userID, new Player(userID, chatId, name));//core mb
         listOfPlayersInDungeon.get(userID).getCurrentEvent().start();
         sendListMsg(listOfPlayersInDungeon.get(userID));
@@ -59,6 +60,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     private void newPlayer(int userID, long chatId, String name, int experience, int health) {
         sendMsg("Hello " + name, chatId);
+        System.out.println("newPlayer");
         listOfPlayersInDungeon.put(userID, new Player(userID, chatId, name, experience, health));//core mb
         listOfPlayersInDungeon.get(userID).getCurrentEvent().start();
         sendListMsg(listOfPlayersInDungeon.get(userID));
@@ -118,7 +120,9 @@ public class TelegramBot extends TelegramLongPollingBot {
             if (i.equals("!finish")) {
                 updatePlayer(player);
             }
-            sendMsg(i, player.getChatID());
+            else {
+                sendMsg(i, player.getChatID());
+            }
         }
         player.msgs = new ArrayList<>();
     }

@@ -53,14 +53,9 @@ public class EventBearFight extends Event {
     public void nextQuestion() {
         if (bearHP <= 0) {
             bearHP = 300;
-            end();
+            super.end();
         } else
             player.sendMsg("bear attacks again");
-    }
-
-    @Override
-    public void end() {
-        player.nextEvent();
     }
 
 }

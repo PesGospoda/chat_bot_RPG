@@ -7,7 +7,7 @@ public abstract class Event {
 
     public abstract void nextQuestion();// переход состояний
 
-    public abstract void end(); // что будет происходить в конце эвента
+    //public abstract void end(); // что будет происходить в конце эвента
 
     private TechnicalCommands techCommands;
 
@@ -28,6 +28,12 @@ public abstract class Event {
 
     public boolean checkDispose() {
         return isDisposable;
+    }
+
+    public void end()
+    {
+        player.sendMsg("end of event");
+        player.nextEvent();
     }
 }
 

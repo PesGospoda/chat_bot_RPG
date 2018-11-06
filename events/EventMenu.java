@@ -2,13 +2,8 @@ import java.util.List;
 
 
 public class EventMenu extends Event {
-    //private List<Question> listQuest;
-    private int questionCounter;
-
     EventMenu(Player player) {
         super(player, true);
-        //this.listQuest = new Parser("ArakanDialog.txt").toListQuestions();
-        //questionCounter = 0;
     }
 
     public void getInfo() {
@@ -18,7 +13,6 @@ public class EventMenu extends Event {
 
     public void start() {
         player.sendMsg("you're entering the vault\n print easy for easy dungeon\n print shop for shop\n print !help for help");
-        //player.sendMsg(listQuest.get(0).question);
     }
 
     public void checkPlayerAnswer(String answer) {
@@ -30,7 +24,6 @@ public class EventMenu extends Event {
         {
             player.sendMsg("enterting easy dungeon");
             player.makeEasyDungeon();
-            //end();
         }
         if (answer.equals("shop"))
         {
@@ -39,11 +32,6 @@ public class EventMenu extends Event {
     }
 
     public void nextQuestion() {
-        questionCounter += 1;
     }
 
-    public void end() {
-        //player.sendMsg("You complete this tomb of dungeon");
-        player.nextEvent();
-    }
 }

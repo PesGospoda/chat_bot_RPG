@@ -67,7 +67,8 @@ public class Player {
 
     public void nextEvent() // это можна в лист евентов пихнуть
     {
-        if (currentEventIndex +1 == dungeonEventList.size())
+        System.out.println(currentEventIndex);
+        if (currentEventIndex +1 >= dungeonEventList.size())
         {
             sendMsg("!finish");
             dungeonEventList.clear();
@@ -112,7 +113,7 @@ public class Player {
 
     public void getDamage(int damage) {
         health -= damage;
-        sendMsg("(You getEvent damage - " + damage + ")");
+        sendMsg("(You got damage - " + damage + ")");
         if (health < 1)
             dead();
     }
@@ -121,18 +122,18 @@ public class Player {
     {
         sendMsg("you died, returning to main menu");
         heal(100);
-        currentEventIndex = dungeonEventList.size()-1;
-        //nextEvent();
+        currentEventIndex = dungeonEventList.size();//здесь мы просто уходим в конец списка ивентов
+        nextEvent();
     }
 
     public void heal(int healPoints) {
         health += healPoints;
-        sendMsg("(You getEvent heal - " + healPoints + ")");
+        sendMsg("(You got heal - " + healPoints + ")");
     }
 
     public void upExperience(int exp){
         experience += exp;
-        sendMsg("(You get experience + " + exp + ")");
+        sendMsg("(You got experience + " + exp + ")");
     }
 
     public void makeEasyDungeon() {

@@ -35,7 +35,7 @@ public class EventCleric extends  Event{
         {
             player.sendMsg ("NO, STUPID MAN");
         }
-        end();
+        super.end();
     }
 
     public void nextQuestion(){
@@ -48,8 +48,4 @@ public class EventCleric extends  Event{
         return isDisposable;
     }
 
-    public void end() {
-        player.sendMsg("end of event");
-        player.nextEvent();
-    }
 }

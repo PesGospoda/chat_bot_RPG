@@ -43,13 +43,8 @@ public class EventQuiz extends Event {
         if (questionCounter < listQuest.size())
             player.sendMsg(listQuest.get(questionCounter).question);
         else {
-            end();
+            super.end();
         }
     }
 
-    @Override
-    public void end() {
-        player.sendMsg("You complete this tomb of dungeon");
-        player.nextEvent();
-    }
 }

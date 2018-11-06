@@ -36,7 +36,7 @@ public class EventPsycho extends Event{
             player.getDamage(20);
             player.sendMsg ("AHAHAHA NOO YO'RE NOT AS CRAZY AS I AM!!!!!");
         }
-        end();
+        super.end();
     }
 
     public void nextQuestion(){
@@ -49,9 +49,5 @@ public class EventPsycho extends Event{
         return isDisposable;
     }
 
-    public void end() {
-        player.sendMsg("end of event");
-        player.nextEvent();
-    }
 }
 
