@@ -113,6 +113,16 @@ public class Player {
     public void getDamage(int damage) {
         health -= damage;
         sendMsg("(You getEvent damage - " + damage + ")");
+        if (health < 1)
+            dead();
+    }
+
+    public void dead()
+    {
+        sendMsg("you died, returning to main menu");
+        heal(100);
+        currentEventIndex = dungeonEventList.size()-1;
+        //nextEvent();
     }
 
     public void heal(int healPoints) {
