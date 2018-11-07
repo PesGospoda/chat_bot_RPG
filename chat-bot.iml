@@ -46,7 +46,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/telegrambots-4.1-jar-with-dependencies.jar!/" />
+          <root url="jar://$MODULE_DIR$/telegrambots-abilities-4.1-jar-with-dependencies.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -55,7 +55,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/telegrambots-abilities-4.1-jar-with-dependencies.jar!/" />
+          <root url="jar://$MODULE_DIR$/telegrambots-4.1-jar-with-dependencies.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -98,5 +98,44 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="c3p0-0.9.1-pre6" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$" />
+          <root url="file://$MODULE_DIR$/TelegramBots/telegrambots-abilities/src/main/java" />
+          <root url="file://$MODULE_DIR$/TelegramBots/telegrambots-abilities/src/test/java" />
+          <root url="file://$MODULE_DIR$/TelegramBots/telegrambots-chat-session-bot/src/main/java" />
+          <root url="file://$MODULE_DIR$/TelegramBots/telegrambots-extensions/src/main/java" />
+          <root url="file://$MODULE_DIR$/TelegramBots/telegrambots-meta/src/main/java" />
+          <root url="file://$MODULE_DIR$/TelegramBots/telegrambots-meta/src/test/java" />
+          <root url="file://$MODULE_DIR$/TelegramBots/telegrambots-spring-boot-starter/src/main/java" />
+          <root url="file://$MODULE_DIR$/TelegramBots/telegrambots-spring-boot-starter/src/test/java" />
+          <root url="file://$MODULE_DIR$/TelegramBots/telegrambots/src/main/java" />
+          <root url="file://$MODULE_DIR$/TelegramBots/telegrambots/src/test/java" />
+          <root url="file://$MODULE_DIR$/events" />
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file://$MODULE_DIR$/test" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
 </module>

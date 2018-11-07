@@ -10,6 +10,7 @@ public class TechnicalCommands {
 
 
     public TechnicalCommands(Player player) {
+        //listOfCommands.put("!save", () -> player.get);
         listOfCommands.put("!playerinfo", player::getInfo);
         listOfCommands.put("!help", () -> player.sendMsg(help()));
         listOfCommands.put("!helpevent", () -> player.getCurrentEvent().getInfo());

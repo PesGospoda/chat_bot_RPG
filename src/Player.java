@@ -9,6 +9,18 @@ public class Player {
         return chatID;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
     private String name;
     private int score;
     private int experience;
@@ -31,31 +43,13 @@ public class Player {
         eventList = new EventList(this);
         //this.currentEventIndex = new Random().nextInt(eventList.events.size());
         this.msgs = new ArrayList<>();
-        this.dungeonEventList =new ArrayList<Event>();
+        this.dungeonEventList = new ArrayList<>();
         dungeonEventList.add(new EventMenu(this));
         this.currentEventIndex = 0;
     }
-
-
-    public Player(int playerID, long chatID, String name, int experience, int health) {
-        this.experience = experience;
-        this.name = name;
-        this.health = health;
-        this.chatID = chatID;
-        this.playerID = playerID;
-        eventList = new EventList(this);
-        //this.currentEventIndex = new Random().nextInt(eventList.events.size());
-        this.msgs = new ArrayList<>();
-        this.dungeonEventList =new ArrayList<Event>();
-        dungeonEventList.add(new EventMenu(this));
-        this.currentEventIndex = 0;
-    }
-
-
 
     public void sendMsg(String text) {
         msgs.add(text);
-        //getBot().sendMsg(text, getChatID());
     }
 
     public void getInfo() {
@@ -67,16 +61,12 @@ public class Player {
 
     public void nextEvent() // это можна в лист евентов пихнуть
     {
-        System.out.println(currentEventIndex);
-        if (currentEventIndex +1 >= dungeonEventList.size())
-        {
-            sendMsg("!finish");
+        if (currentEventIndex + 1 >= dungeonEventList.size()) {
             dungeonEventList.clear();
             dungeonEventList.add(new EventMenu(this));
-            currentEventIndex=0;
-        }
-        else
-            currentEventIndex+=1;
+            currentEventIndex = 0;
+        } else
+            currentEventIndex += 1;
         getCurrentEvent().start();
 
     }
@@ -85,7 +75,9 @@ public class Player {
         return health;
     }
 
-    public int getExperience() {return experience; }
+    public int getExperience() {
+        return experience;
+    }
 
     public List<String> getMsgs() {
         return msgs;
@@ -108,18 +100,19 @@ public class Player {
     }
 
     public Boolean isAlive() {
-        return this.health > 0;
+        if (health > 0)
+            return true;
+        dead();
+        nextEvent();
+        return false;
     }
 
     public void getDamage(int damage) {
         health -= damage;
         sendMsg("(You got damage - " + damage + ")");
-        if (health < 1)
-            dead();
     }
 
-    public void dead()
-    {
+    public void dead() {
         sendMsg("you died, returning to main menu");
         heal(100);
         currentEventIndex = dungeonEventList.size();//здесь мы просто уходим в конец списка ивентов
@@ -131,7 +124,7 @@ public class Player {
         sendMsg("(You got heal - " + healPoints + ")");
     }
 
-    public void upExperience(int exp){
+    public void upExperience(int exp) {
         experience += exp;
         sendMsg("(You got experience + " + exp + ")");
     }

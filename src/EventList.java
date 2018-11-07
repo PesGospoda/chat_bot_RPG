@@ -13,10 +13,10 @@ public class EventList {
     EventList(Player player) {
         events = new ArrayList<>();
         events.add(() -> new EventTomb(player));
-        //events.add(() -> new EventBearFight(player));
-        //events.add(() -> new EventQuiz(player));
-        //events.add(() -> new EventCleric(player));
-        //events.add(() -> new EventPsycho(player));
+        events.add(() -> new EventBearFight(player));
+        events.add(() -> new EventQuiz(player));
+        events.add(() -> new EventCleric(player));
+        events.add(() -> new EventPsycho(player));
     }
 
     EventList(){
