@@ -3,9 +3,21 @@ import java.sql.*;
 public class MySQL {
     private Connection connection;
 
+    private static String selectPlayerString = "SELECT * FROM players WHERE userID=?";
+    private static String updateString = "UPDATE players SET experience=?, hp=? WHERE userID=?";
+    private static String insertNewPlayerString =  "INSERT INTO players VALUES (?, ?, ?, ?)";
+    private static PreparedStatement selectPlayerCommand;
+    private static PreparedStatement updateCommand;
+    private static PreparedStatement insertNewPlayerCommand;
+
+
+
     public MySQL(String url, String user, String password) {
         try {
             connection = DriverManager.getConnection(url, user, password);
+            selectPlayerCommand = connection.prepareStatement(selectPlayerString);
+            updateCommand = connection.prepareStatement(updateString);
+            insertNewPlayerCommand = connection.prepareStatement(insertNewPlayerString);
         } catch (SQLException sqlEx) {
             sqlEx.printStackTrace();
         }
@@ -14,27 +26,33 @@ public class MySQL {
 
     public void updatePlayer(Player player) {
         try {
-            connection.createStatement().execute(String.format("UPDATE players SET experience=%d, hp=%d WHERE userID=%d",
-                    player.getExperience(), player.getHealth(), player.getPlayerID()));
-        } catch (SQLException sqlEx) {
+            updateCommand.setInt(1, player.getExperience());
+            updateCommand.setInt(2, player.getHealth());
+            updateCommand.setInt(3, player.getPlayerID());
+            updateCommand.executeUpdate();
+        }
+        catch (SQLException sqlEx) {
             sqlEx.printStackTrace();
         }
     }
 
     public void insertPlayer(Player player){
         try {
-            connection.createStatement().execute(String.format("INSERT INTO players VALUES (%d, \"%s\", %d, %d)",
-                    player.getPlayerID(), player.getName(), player.getExperience(), player.getHealth())) ;
-        } catch (SQLException sqlEx) {
+            insertNewPlayerCommand.setInt(1, player.getPlayerID());// playerID
+            insertNewPlayerCommand.setString(2, player.getName());//player name
+            insertNewPlayerCommand.setInt(3, player.getExperience());//experience
+            insertNewPlayerCommand.setInt(4, player.getHealth());//health
+            insertNewPlayerCommand.executeUpdate();
+        }
+        catch (SQLException sqlEx) {
             sqlEx.printStackTrace();
         }
     }
 
     public void loadInfo(Player player){
         try {
-
-            ResultSet resultSet = connection.createStatement().executeQuery(String.format("SELECT * FROM players WHERE userID=%d",
-                    player.getPlayerID()));
+            selectPlayerCommand.setInt(1, player.getPlayerID());
+            ResultSet resultSet = selectPlayerCommand.executeQuery();
             if(resultSet.next()) {
                 System.out.println("jj");
                 player.setHealth(resultSet.getInt("hp"));
