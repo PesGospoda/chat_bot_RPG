@@ -6,24 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="efa77b7c-a9f6-437c-9561-1343a4a7f9e9" name="Default Changelist" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Event.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/EventBearFight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/EventCleric.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/EventMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/EventPsycho.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/EventQuiz.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/EventTomb.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/NewGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/NewMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Op.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Operation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Parser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/TechnicalCommands.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/TelegramBot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat-bot/eventList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TechnicalCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TechnicalCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestPlayer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,7 +103,7 @@
     <session id="-1464097568">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="106" />
+          <entry key="java" value="110" />
           <entry key="md" value="2" />
           <entry key="tatus" value="1" />
           <entry key="testDial" value="1" />
@@ -126,7 +112,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="106" />
+          <entry key="JAVA" value="110" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="20" />
         </counts>
@@ -134,28 +120,31 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="1904" />
+          <entry key="java" value="2696" />
           <entry key="testDial" value="4" />
           <entry key="txt" value="125" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1904" />
+          <entry key="JAVA" value="2696" />
           <entry key="PLAIN_TEXT" value="133" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.46" value="3" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.69" value="1" />
+          <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.87" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
     </session>
@@ -168,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TelegramBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+            <state relative-caret-position="1462">
+              <caret line="86" column="69" selection-start-line="86" selection-start-column="69" selection-end-line="86" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,7 +166,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NewMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -192,8 +181,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MySQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="41" lean-forward="true" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+            <state relative-caret-position="-578">
+              <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -202,7 +191,19 @@
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+              <caret line="145" column="1" lean-forward="true" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/TestPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,28 +212,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/events/EventPsycho.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/events/Event.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EventList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="17">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -256,6 +239,18 @@
               <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
               <folding>
                 <element signature="e#224#225#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TechnicalCommands.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -334,7 +329,6 @@
         <option value="$PROJECT_DIR$/test/tests.java" />
         <option value="$PROJECT_DIR$/src/Event.java" />
         <option value="$PROJECT_DIR$/test/TestParser.java" />
-        <option value="$PROJECT_DIR$/test/TestPlayer.java" />
         <option value="$PROJECT_DIR$/src/EventTomb.java" />
         <option value="$PROJECT_DIR$/test/TestTomb.java" />
         <option value="$PROJECT_DIR$/src/Question.java" />
@@ -345,10 +339,11 @@
         <option value="$PROJECT_DIR$/events/EventTomb.java" />
         <option value="$PROJECT_DIR$/src/NewMain.java" />
         <option value="$PROJECT_DIR$/src/EventList.java" />
-        <option value="$PROJECT_DIR$/src/TechnicalCommands.java" />
-        <option value="$PROJECT_DIR$/src/TelegramBot.java" />
-        <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/MySQL.java" />
+        <option value="$PROJECT_DIR$/src/TelegramBot.java" />
+        <option value="$PROJECT_DIR$/test/TestPlayer.java" />
+        <option value="$PROJECT_DIR$/src/Player.java" />
+        <option value="$PROJECT_DIR$/src/TechnicalCommands.java" />
       </list>
     </option>
   </component>
@@ -364,7 +359,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="32" />
     <option name="y" value="72" />
     <option name="width" value="1346" />
@@ -376,6 +371,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -389,11 +385,21 @@
               <item name="chat_bot_RPG" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="chat_bot_RPG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chat_bot_RPG" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TechnicalCommands.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="chat_bot_RPG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chat_bot_RPG" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,7 +408,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541567163266" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541992114564" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
@@ -448,7 +454,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NewMain">
+  <component name="RunManager" selected="JUnit.TestPlayer">
     <configuration name="NewMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NewMain" />
       <module name="chat-bot" />
@@ -522,11 +528,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestPlayer" />
         <item itemvalue="Application.NewMain" />
         <item itemvalue="JUnit.All in chat-bot" />
         <item itemvalue="JUnit.TestQuestion" />
         <item itemvalue="JUnit.TestTomb" />
-        <item itemvalue="JUnit.TestPlayer" />
       </list>
     </recent_temporary>
   </component>
@@ -574,24 +580,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestPlayer - 2018.10.23 at 23h 29m 28s.xml">
-      <configuration name="TestPlayer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestPlayer - 2018.10.23 at 23h 30m 18s.xml">
-      <configuration name="TestPlayer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestParser_and_2_more - 2018.10.23 at 23h 42m 24s.xml">
-      <configuration name="TestParser and 2 more" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestParser_and_2_more - 2018.10.23 at 23h 46m 17s.xml">
-      <configuration name="TestParser and 2 more" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestTomb - 2018.10.24 at 00h 07m 03s.xml">
-      <configuration name="TestTomb" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestQuestion - 2018.10.24 at 00h 14m 00s.xml">
-      <configuration name="TestQuestion" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestQuestion - 2018.10.24 at 00h 14m 58s.xml">
       <configuration name="TestQuestion" configurationId="JUnit" />
     </history-entry>
@@ -603,6 +591,24 @@
     </history-entry>
     <history-entry file="All_in_chat-bot - 2018.10.24 at 08h 48m 21s.xml">
       <configuration name="All in chat-bot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPlayer - 2018.11.12 at 07h 56m 04s.xml">
+      <configuration name="TestPlayer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPlayer - 2018.11.12 at 07h 58m 36s.xml">
+      <configuration name="TestPlayer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPlayer - 2018.11.12 at 07h 58m 53s.xml">
+      <configuration name="TestPlayer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPlayer - 2018.11.12 at 08h 02m 31s.xml">
+      <configuration name="TestPlayer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPlayer - 2018.11.12 at 08h 02m 52s.xml">
+      <configuration name="TestPlayer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPlayer - 2018.11.12 at 08h 04m 36s.xml">
+      <configuration name="TestPlayer" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -618,10 +624,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -630,7 +635,7 @@
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32269505" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" weight="0.2596774" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" weight="0.2569558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -742,16 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/telegrambots-4.1-jar-with-dependencies.jar!/org/apache/http/HttpHost.class" />
     <entry file="jar://$PROJECT_DIR$/telegrambots-4.1-jar-with-dependencies.jar!/org/telegram/telegrambots/bots/DefaultBotOptions.class" />
     <entry file="file://$PROJECT_DIR$/test/TestParser.java">
@@ -846,16 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TechnicalCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/events/EventPsycho.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -863,20 +848,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventList.java">
+    <entry file="file://$PROJECT_DIR$/events/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="629">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -893,17 +868,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/events/Event.java">
+    <entry file="file://$PROJECT_DIR$/src/MySQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="-578">
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EventList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+          <caret line="145" column="1" lean-forward="true" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -920,27 +922,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TelegramBot.java">
+    <entry file="file://$PROJECT_DIR$/src/TechnicalCommands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        <state relative-caret-position="182">
+          <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MySQL.java">
+    <entry file="file://$PROJECT_DIR$/src/TelegramBot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="41" lean-forward="true" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+        <state relative-caret-position="1462">
+          <caret line="86" column="69" selection-start-line="86" selection-start-column="69" selection-end-line="86" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NewMain.java">
+    <entry file="file://$PROJECT_DIR$/test/TestPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="373">
+          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

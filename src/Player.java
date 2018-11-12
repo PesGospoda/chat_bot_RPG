@@ -41,7 +41,6 @@ public class Player {
         this.chatID = chatID;
         this.playerID = playerID;
         eventList = new EventList(this);
-        //this.currentEventIndex = new Random().nextInt(eventList.events.size());
         this.msgs = new ArrayList<>();
         this.dungeonEventList = new ArrayList<>();
         dungeonEventList.add(new EventMenu(this));
@@ -59,12 +58,13 @@ public class Player {
     }
 
 
-    public void nextEvent() // это можна в лист евентов пихнуть
+    public void nextEvent()
     {
         if (currentEventIndex + 1 >= dungeonEventList.size()) {
             dungeonEventList.clear();
             dungeonEventList.add(new EventMenu(this));
             currentEventIndex = 0;
+            sendMsg("!finish");
         } else
             currentEventIndex += 1;
         getCurrentEvent().start();
@@ -102,21 +102,22 @@ public class Player {
     public Boolean isAlive() {
         if (health > 0)
             return true;
-        dead();
-        nextEvent();
         return false;
     }
 
     public void getDamage(int damage) {
         health -= damage;
         sendMsg("(You got damage - " + damage + ")");
+        if (!isAlive())
+            dead();
     }
 
     public void dead() {
         sendMsg("you died, returning to main menu");
-        heal(100);
+        sendMsg("!dead");
+        //heal(100);
         currentEventIndex = dungeonEventList.size();//здесь мы просто уходим в конец списка ивентов
-        nextEvent();
+        //nextEvent(); //это перенесено в бота знаю что костыль но потом подумаю как лучше
     }
 
     public void heal(int healPoints) {

@@ -34,8 +34,8 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     private void newPlayer(int userID, long chatId, String name) {
         Player newPlayer = new Player(userID, chatId, name);
-        listOfPlayersInDungeon.put(userID, newPlayer);
         dataBase.loadInfo(newPlayer);
+        listOfPlayersInDungeon.put(userID, newPlayer);
         newPlayer.sendMsg("Hello " + name);
         newPlayer.getCurrentEvent().start();
     }
@@ -55,16 +55,30 @@ public class TelegramBot extends TelegramLongPollingBot {
             player.getCurrentEvent().checkPlayerAnswer(message.getText().toLowerCase());
             sendListMsg(player);
         }
-        if (!player.isAlive())
-            dataBase.updatePlayer(player);
     }
 
     public void sendListMsg(Player player) {
+        String inputStr = "";
+        sendMsgCycle:
         for (String i :
-                player.msgs) {
-            sendMsg(i, player.getChatID());
+                player.msgs) {//здесь нужно замутить чтобы если данж пройден то сейвилось в базу а если нет то выбросить в главное меню
+            inputStr = i;
+            switch(inputStr){
+                case "!dead": player.dead();
+                dataBase.loadInfo(player);
+                break sendMsgCycle;
+                //break;
+                case "!finish": dataBase.updatePlayer(player);
+                break;
+                default: sendMsg(inputStr, player.getChatID());
+                break;
+            }
         }
-        player.msgs = new ArrayList<>();
+        player.msgs.clear();
+        if (inputStr.equals("!dead")) {
+            player.nextEvent();// здесь мы отправляем то что менюха высрала
+            sendListMsg(player);
+        }
     }
 
 
