@@ -54,7 +54,6 @@ public class MySQL {
             selectPlayerCommand.setInt(1, player.getPlayerID());
             ResultSet resultSet = selectPlayerCommand.executeQuery();
             if(resultSet.next()) {
-                System.out.println("jj");
                 player.setHealth(resultSet.getInt("hp"));
                 player.setExperience(resultSet.getInt("experience"));
             }
