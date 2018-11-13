@@ -142,5 +142,17 @@ public class Player {
         nextEvent();
     }
 
+    public void makeMediumDungeon() {
+        int numberOfEvents = rnd.nextInt(6) + 1;
+        dungeonEventList.clear();
+        for (int i = 0; i < numberOfEvents; i++) {
+            int nextIndex = rnd.nextInt(eventList.events.size());
+            dungeonEventList.add(eventList.events.get(nextIndex).execute());
+            sendMsg(dungeonEventList.get(i).toString());
+        }
+        currentEventIndex = -1;
+        nextEvent();
+    }
+
 
 }

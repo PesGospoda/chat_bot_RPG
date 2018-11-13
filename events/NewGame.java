@@ -1,4 +1,4 @@
-public class NewGame extends Event {
+public class NewGame extends Event {//хз нужно ли это новая игра теперь другая но вдруг что отсюда понадобится
     public NewGame(Player player) {
         super(player, false);
     }

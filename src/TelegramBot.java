@@ -61,22 +61,21 @@ public class TelegramBot extends TelegramLongPollingBot {
         String inputStr = "";
         sendMsgCycle:
         for (String i :
-                player.msgs) {//здесь нужно замутить чтобы если данж пройден то сейвилось в базу а если нет то выбросить в главное меню
+                player.msgs) {
             inputStr = i;
             switch(inputStr){
                 case "!dead": player.dead();
-                dataBase.loadInfo(player);
-                break sendMsgCycle;
-                //break;
+                    dataBase.loadInfo(player);
+                    break sendMsgCycle;
                 case "!finish": dataBase.updatePlayer(player);
-                break;
+                    break;
                 default: sendMsg(inputStr, player.getChatID());
-                break;
+                    break;
             }
         }
         player.msgs.clear();
         if (inputStr.equals("!dead")) {
-            player.nextEvent();// здесь мы отправляем то что менюха высрала
+            player.nextEvent();// здесь мы отправляем то что менюха выдала
             sendListMsg(player);
         }
     }

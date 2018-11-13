@@ -1,3 +1,4 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -10,6 +11,7 @@ public class TestDatabase {
     private static final String user = "root";
     private static final String password = "1234";
     MySQL dataBase = new MySQL(url, user, password);
+
 
 
     @Test

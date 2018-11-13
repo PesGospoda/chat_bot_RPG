@@ -12,7 +12,7 @@ public class EventMenu extends Event {
     }
 
     public void start() {
-        player.sendMsg("you're entering the vault\n print easy for easy dungeon\n print shop for shop\n print !help for help");
+        player.sendMsg("you're entering the vault\n print easy for easy dungeon\n print medium for medium dungeon \n print shop for shop\n print !help for help");
     }
 
     public void checkPlayerAnswer(String answer) {
@@ -25,9 +25,14 @@ public class EventMenu extends Event {
             player.sendMsg("enterting easy dungeon");
             player.makeEasyDungeon();
         }
+        if (answer.equals("medium"))
+        {
+            player.sendMsg("enterting medium dungeon");
+            player.makeMediumDungeon();
+        }
         if (answer.equals("shop"))
         {
-            player.sendMsg("no shop");
+            player.sendMsg("will be soon");
         }
     }
 

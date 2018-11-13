@@ -30,7 +30,7 @@ public class EventTomb extends Event {
     }
 
     public void checkPlayerAnswer(String answer) {
-        if (answer.charAt(0) == '!') {//надо спросить про это, не трожь пока
+        if (answer.charAt(0) == '!') {
             super.checkPlayerAnswer(answer);
             return;
         }
