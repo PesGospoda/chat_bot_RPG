@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efa77b7c-a9f6-437c-9561-1343a4a7f9e9" name="Default Changelist" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClericDialog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/ClericDialog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PsychoDialog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/PsychoDialog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/EventCleric.java" beforeDir="false" afterPath="$PROJECT_DIR$/events/EventCleric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/events/EventMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/events/EventMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/EventPsycho.java" beforeDir="false" afterPath="$PROJECT_DIR$/events/EventPsycho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/events/EventTomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/events/EventTomb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/NewGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/events/NewGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/NewGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/snakeDialog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/snakeDialog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TelegramBot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/TestDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestDatabase.java" afterDir="false" />
@@ -41,7 +49,8 @@
     <session id="-104339851">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="22" />
+          <entry key="project.open.time.101" value="1" />
           <entry key="project.open.time.104" value="1" />
           <entry key="project.open.time.105" value="2" />
           <entry key="project.open.time.11" value="1" />
@@ -62,16 +71,16 @@
           <entry key="project.open.time.95" value="1" />
           <entry key="project.open.time.96" value="2" />
           <entry key="project.open.time.97" value="1" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
           <entry key="html" value="1" />
-          <entry key="java" value="204" />
+          <entry key="java" value="230" />
           <entry key="md" value="4" />
-          <entry key="tatus" value="2" />
+          <entry key="tatus" value="3" />
           <entry key="txt" value="21" />
           <entry key="xml" value="8" />
         </counts>
@@ -80,22 +89,22 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="204" />
+          <entry key="JAVA" value="230" />
           <entry key="Markdown" value="4" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="PLAIN_TEXT" value="24" />
           <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10994" />
+          <entry key="java" value="11083" />
           <entry key="md" value="239" />
           <entry key="txt" value="435" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10994" />
+          <entry key="JAVA" value="11083" />
           <entry key="Markdown" value="239" />
           <entry key="PLAIN_TEXT" value="435" />
         </counts>
@@ -156,11 +165,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TelegramBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+            <state relative-caret-position="405">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,8 +180,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NewMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,10 +190,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/TestDatabase.java">
+        <entry file="file://$PROJECT_DIR$/src/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="204">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,60 +213,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MySQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="151" column="9" lean-forward="true" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/events/NewGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="110" selection-start-column="110" selection-end-column="110" />
-              <folding>
-                <element signature="e#71#72#0" expanded="true" />
-                <element signature="e#107#108#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/events/EventMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/TestQuestion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/events/EventTomb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+            <state relative-caret-position="153">
+              <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="42" />
               <folding>
                 <element signature="e#554#555#0" expanded="true" />
                 <element signature="e#586#587#0" expanded="true" />
@@ -260,13 +235,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/events/EventPsycho.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="637">
+              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+              <folding>
+                <element signature="e#1368#1369#0" expanded="true" />
+                <element signature="e#1403#1404#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Question.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            <state relative-caret-position="68">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="36" />
               <folding>
+                <element signature="e#183#184#0" expanded="true" />
                 <element signature="e#224#225#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TechnicalCommands.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/events/EventQuiz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -293,9 +303,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/testEvent.java" />
-        <option value="$PROJECT_DIR$/src/eventList.java" />
-        <option value="$PROJECT_DIR$/src/eventAbstract.java" />
         <option value="$PROJECT_DIR$/src/poleChudes.java" />
         <option value="$PROJECT_DIR$/src/eventGrobnica.java" />
         <option value="$PROJECT_DIR$/dialogs.txt" />
@@ -334,16 +341,19 @@
         <option value="$PROJECT_DIR$/events/EventBearFight.java" />
         <option value="$PROJECT_DIR$/events/EventQuiz.java" />
         <option value="$PROJECT_DIR$/src/NewMain.java" />
-        <option value="$PROJECT_DIR$/src/EventList.java" />
         <option value="$PROJECT_DIR$/test/TestPlayer.java" />
         <option value="$PROJECT_DIR$/src/TechnicalCommands.java" />
-        <option value="$PROJECT_DIR$/src/MySQL.java" />
-        <option value="$PROJECT_DIR$/test/TestDatabase.java" />
-        <option value="$PROJECT_DIR$/src/TelegramBot.java" />
-        <option value="$PROJECT_DIR$/src/Player.java" />
-        <option value="$PROJECT_DIR$/events/EventMenu.java" />
         <option value="$PROJECT_DIR$/events/NewGame.java" />
         <option value="$PROJECT_DIR$/events/EventTomb.java" />
+        <option value="$PROJECT_DIR$/test/TestDatabase.java" />
+        <option value="$PROJECT_DIR$/src/EventList.java" />
+        <option value="$PROJECT_DIR$/events/EventMenu.java" />
+        <option value="$PROJECT_DIR$/events/EventCleric.java" />
+        <option value="$PROJECT_DIR$/events/Event.java" />
+        <option value="$PROJECT_DIR$/events/EventPsycho.java" />
+        <option value="$PROJECT_DIR$/src/MySQL.java" />
+        <option value="$PROJECT_DIR$/src/Player.java" />
+        <option value="$PROJECT_DIR$/src/TelegramBot.java" />
       </list>
     </option>
   </component>
@@ -371,28 +381,46 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="chat_bot_RPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat_bot_RPG" type="462c0819:PsiDirectoryNode" />
+              <item name="chat-bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chat-bot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat_bot_RPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat_bot_RPG" type="462c0819:PsiDirectoryNode" />
+              <item name="chat-bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chat-bot" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chat-bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chat-bot" type="462c0819:PsiDirectoryNode" />
               <item name="events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat_bot_RPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat_bot_RPG" type="462c0819:PsiDirectoryNode" />
+              <item name="chat-bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chat-bot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat_bot_RPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat_bot_RPG" type="462c0819:PsiDirectoryNode" />
+              <item name="chat-bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chat-bot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="EventList.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="chat-bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chat-bot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TechnicalCommands.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="chat-bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chat-bot" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -407,7 +435,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542094812665" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542173093286" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
@@ -422,22 +450,22 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot\data" />
+      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot\.idea" />
+      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot" />
+      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot\tests" />
+      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot\src" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot\test" />
-      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot\src" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot\.idea" />
-      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot" />
-      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot\data" />
-      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot\tests" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot\test" />
       <recent name="C:\Users\PesGospoda\IdeaProjects\chat-bot\src" />
     </key>
   </component>
@@ -528,8 +556,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.NewMain" />
-        <item itemvalue="JUnit.TestPlayer" />
         <item itemvalue="JUnit.All in chat-bot" />
+        <item itemvalue="JUnit.TestPlayer" />
         <item itemvalue="JUnit.TestQuestion" />
         <item itemvalue="JUnit.TestTomb" />
       </list>
@@ -567,6 +595,7 @@
       <workItem from="1540352635308" duration="6499000" />
       <workItem from="1541515548553" duration="16667000" />
       <workItem from="1541561940846" duration="5112000" />
+      <workItem from="1542168316733" duration="4503000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1538071287332</created>
@@ -579,39 +608,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestQuestion - 2018.10.24 at 00h 14m 58s.xml">
-      <configuration name="TestQuestion" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_chat-bot - 2018.10.24 at 00h 17m 13s.xml">
-      <configuration name="All in chat-bot" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_chat-bot - 2018.10.24 at 00h 17m 39s.xml">
-      <configuration name="All in chat-bot" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_chat-bot - 2018.10.24 at 08h 48m 21s.xml">
-      <configuration name="All in chat-bot" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestPlayer - 2018.11.12 at 07h 56m 04s.xml">
-      <configuration name="TestPlayer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestPlayer - 2018.11.12 at 07h 58m 36s.xml">
-      <configuration name="TestPlayer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestPlayer - 2018.11.12 at 07h 58m 53s.xml">
-      <configuration name="TestPlayer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestPlayer - 2018.11.12 at 08h 02m 31s.xml">
-      <configuration name="TestPlayer" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestPlayer - 2018.11.12 at 08h 02m 52s.xml">
       <configuration name="TestPlayer" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestPlayer - 2018.11.12 at 08h 04m 36s.xml">
       <configuration name="TestPlayer" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_chat-bot - 2018.11.14 at 09h 08m 15s.xml">
+      <configuration name="All in chat-bot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_chat-bot - 2018.11.14 at 09h 10m 54s.xml">
+      <configuration name="All in chat-bot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_chat-bot - 2018.11.14 at 09h 12m 43s.xml">
+      <configuration name="All in chat-bot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_chat-bot - 2018.11.14 at 09h 16m 25s.xml">
+      <configuration name="All in chat-bot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_chat-bot - 2018.11.14 at 09h 22m 20s.xml">
+      <configuration name="All in chat-bot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_chat-bot - 2018.11.14 at 09h 26m 43s.xml">
+      <configuration name="All in chat-bot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_chat-bot - 2018.11.14 at 09h 33m 41s.xml">
+      <configuration name="All in chat-bot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_chat-bot - 2018.11.14 at 09h 34m 37s.xml">
+      <configuration name="All in chat-bot" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132508000" />
+    <option name="totallyTimeSpent" value="137011000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -623,9 +652,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -634,7 +663,7 @@
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32269505" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" weight="0.2569558" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" weight="0.2564516" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -670,7 +699,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Tomb.java" />
     <entry file="file://$PROJECT_DIR$/src/Core.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/TestPoleChudes.java" />
@@ -717,30 +745,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tatus">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/tests.java" />
-    <entry file="file://$PROJECT_DIR$/events/EventBearFight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/telegrambots-4.1-jar-with-dependencies.jar!/org/apache/http/HttpHost.class" />
     <entry file="jar://$PROJECT_DIR$/telegrambots-4.1-jar-with-dependencies.jar!/org/telegram/telegrambots/bots/DefaultBotOptions.class" />
-    <entry file="file://$PROJECT_DIR$/events/EventQuiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
@@ -791,47 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/events/EventPsycho.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/events/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TechnicalCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/TestPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -849,16 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestTomb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/TestQuestion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -866,17 +822,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MySQL.java">
+    <entry file="file://$PROJECT_DIR$/test/TestTomb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        <state relative-caret-position="260">
+          <caret line="32" column="75" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/TestDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state relative-caret-position="493">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tatus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events/NewGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EventList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events/EventCleric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events/EventBearFight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events/EventMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events/EventPsycho.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding>
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events/EventQuiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events/EventTomb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MySQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -885,18 +965,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        <state relative-caret-position="68">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="36" />
           <folding>
+            <element signature="e#183#184#0" expanded="true" />
             <element signature="e#224#225#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NewMain.java">
+    <entry file="file://$PROJECT_DIR$/src/TechnicalCommands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="175">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -905,51 +986,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TelegramBot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        <state relative-caret-position="405">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="151" column="9" lean-forward="true" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/events/EventMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/events/NewGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="110" selection-start-column="110" selection-end-column="110" />
-          <folding>
-            <element signature="e#71#72#0" expanded="true" />
-            <element signature="e#107#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/events/EventTomb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-          <folding>
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
       </provider>

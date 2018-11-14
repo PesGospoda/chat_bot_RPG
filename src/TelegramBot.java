@@ -63,13 +63,16 @@ public class TelegramBot extends TelegramLongPollingBot {
         for (String i :
                 player.msgs) {
             inputStr = i;
-            switch(inputStr){
-                case "!dead": player.dead();
+            switch (inputStr) {
+                case "!dead":
+                    player.dead();
                     dataBase.loadInfo(player);
                     break sendMsgCycle;
-                case "!finish": dataBase.updatePlayer(player);
+                case "!finish":
+                    dataBase.updatePlayer(player);
                     break;
-                default: sendMsg(inputStr, player.getChatID());
+                default:
+                    sendMsg(inputStr, player.getChatID());
                     break;
             }
         }

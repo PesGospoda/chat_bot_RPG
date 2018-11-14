@@ -20,18 +20,15 @@ public class EventMenu extends Event {
             super.checkPlayerAnswer(answer);
             return;
         }
-        if (answer.equals("easy"))
-        {
+        if (answer.equals("easy")) {
             player.sendMsg("enterting easy dungeon");
             player.makeEasyDungeon();
         }
-        if (answer.equals("medium"))
-        {
+        if (answer.equals("medium")) {
             player.sendMsg("enterting medium dungeon");
             player.makeMediumDungeon();
         }
-        if (answer.equals("shop"))
-        {
+        if (answer.equals("shop")) {
             player.sendMsg("will be soon");
         }
     }

@@ -58,8 +58,7 @@ public class Player {
     }
 
 
-    public void nextEvent()
-    {
+    public void nextEvent() {
         if (currentEventIndex + 1 >= dungeonEventList.size()) {
             dungeonEventList.clear();
             dungeonEventList.add(new EventMenu(this));

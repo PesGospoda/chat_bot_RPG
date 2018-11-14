@@ -41,7 +41,7 @@ public class EventTomb extends Event {
             player.sendMsg("NO! Wrong answer. Catch fireball");
             player.getDamage(20);
             //player.sendMsg(listQuest.get(questionCounter).question);
-            nextQuestion();
+            //nextQuestion();
         }
     }
 
@@ -50,6 +50,7 @@ public class EventTomb extends Event {
         if (questionCounter < listQuest.size())
             player.sendMsg(listQuest.get(questionCounter).question);
         else {
+            player.sendMsg("You complete this tomb of dungeon");
             super.end();
         }
     }

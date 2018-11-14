@@ -17,8 +17,10 @@ public class TestDatabase {
     @Test
     public void test_LoadInfo() {
         Player player = new Player(12345, 123, "testPlayer");
+        player.setExperience(9756);
+        dataBase.updatePlayer(player);
         dataBase.loadInfo(player);
-        assertEquals(9765, player.getExperience());
+        assertEquals(9756, player.getExperience());
     }
 
     @Test

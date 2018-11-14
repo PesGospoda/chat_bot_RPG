@@ -16,7 +16,6 @@ public class EventList {
         events.add(() -> new EventBearFight(player));
         events.add(() -> new EventQuiz(player));
         events.add(() -> new EventCleric(player));
-        events.add(() -> new EventPsycho(player));
     }
 
     EventList(){

@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Random;
 
-public class EventPsycho extends Event{
+public class EventPsycho extends Event {
 
     private Parser parser;
     public List<Question> listQuest;
@@ -12,40 +12,38 @@ public class EventPsycho extends Event{
 
     EventPsycho(Player player) {
         super(player, false);
-        this.parser = new Parser("PsychoDialog.txt");
+        this.parser = new Parser("data/PsychoDialog.txt");
         this.listQuest = this.parser.toListQuestions();
         this.player = player;
     }
 
     public void getInfo() {
-        player.sendMsg( "\n You see a strange man with knife in his hand.\n Hey YoU Answer my question or i stab you with this sharp KNIFE");
+        player.sendMsg("\n You see a strange man with knife in his hand.\n Hey YoU Answer my question or i stab you with this sharp KNIFE");
     }
 
-    public void start(){
+    public void start() {
         questionCounter = rnd.nextInt(listQuest.size());
         player.sendMsg(listQuest.get(questionCounter).question);
     }
 
-    public void checkPlayerAnswer(String answer){
+    public void checkPlayerAnswer(String answer) {
         if (listQuest.get(questionCounter).answers.contains(answer)) {
             player.upExperience(10);
-            player.sendMsg ("AAARRRGGHHHH IT's A RIGHT ANSWER!!!!");
-        }
-        else
-        {
+            player.sendMsg("AAARRRGGHHHH IT's A RIGHT ANSWER!!!!");
+        } else {
             player.getDamage(20);
-            player.sendMsg ("AHAHAHA NOO YO'RE NOT AS CRAZY AS I AM!!!!!");
+            player.sendMsg("AHAHAHA NOO YO'RE NOT AS CRAZY AS I AM!!!!!");
         }
         super.end();
     }
 
-    public void nextQuestion(){
+    public void nextQuestion() {
         {
             player.sendMsg("!exit");
         }
     }
 
-    public boolean checkDispose(){
+    public boolean checkDispose() {
         return isDisposable;
     }
 
